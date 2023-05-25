@@ -1,0 +1,85 @@
+main {
+    width: 50%;
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 2px solid #001E2D;
+    box-shadow: 0 2px 10px #001E2D, 0 2px 10px #001E2D;
+}
+table {
+    width: 70%;
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 2px solid #001E2D;
+    box-shadow: 0 2px 10px #001E2D, 0 2px 10px #001E2D;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  th {
+    background-color: #001E2D;
+    color: white;
+    padding: 8px;
+  }
+  
+  td {
+    padding: 8px;
+   
+  }
+  /* Estilos para los botones de acción */
+.button-editar {
+    background-color:#066290; /* Color de fondo */
+    color: white; /* Color de texto */
+    border: none; /* Sin bordes */
+    padding: 8px 17px; /* Relleno */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin-right: 10%; /* Espacio entre botones */
+    border-radius: 5px;
+    margin-bottom: 2px;
+    margin-left: 10%;
+    
+  }
+  
+  .button-eliminar {
+    background-color: #890f06; /* Color de fondo */
+    color: white; /* Color de texto */
+    border: none; /* Sin bordes */
+    padding: 8px 12px; /* Relleno */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 5px;
+    margin-left: 10%;
+    
+  }
+  
+  /* Estilos para los iconos */
+  .button-editar i,
+  .button-eliminar i {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+  }
+  
+  .button-editar i::before {
+    content: "\f044"; /* Código del icono de editar en Font Awesome */
+    font-family: "Font Awesome 5 Free"; /* Familia de fuentes de Font Awesome */
+  }
+  
+  .button-eliminar i::before {
+    content: "\f2ed"; /* Código del icono de eliminar en Font Awesome */
+    font-family: "Font Awesome 5 Free"; /* Familia de fuentes de Font Awesome */
+  }

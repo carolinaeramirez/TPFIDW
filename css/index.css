@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #fff;
+}
+header {
+  padding: 15px 0;
+}
+header h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 50px;
+  margin-bottom: 15px;
+  background-color: rgb(189, 189, 189);
+  text-align: center;
+}
+.container-portada {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #fff;
+  padding: 15px;
+}
+.container-img {
+  width: 100%;
+  background-size: auto;
+  padding-block: 15px;
+}
+.container-img img {
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+nav ul li {
+  border-top: solid #000 1px;
+  width: 150px;
+  padding: 5px 0;
+}
+nav ul li:hover {
+  border-color: blue;
+  border-top: #000 solid 4px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+.seleccionado {
+  border-top: 4px #000 solid;
+}
+.logo{
+  padding: auto;
+margin-block-start: auto;
+}
+/* .container-cards{
+    display: flex;
+    justify-content: space-between;
+
+} */
+.colapse-buton {
+  background-color: #eee;
+  color: #333;
+  cursor: pointer;
+  width: 200px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+  /* background-color: transparent; */
+  /* border: none;
+  cursor: pointer; */
+  /* font-size: 20px; */
+}
+.adm-menu {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+.admMenu.show {
+  display: block;
+  
+}

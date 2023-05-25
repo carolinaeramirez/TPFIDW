@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="fontello/css/jose.css" />
+    <link rel="shortcut icon" href="img/logo3.jpg" type="image/x-icon" />
+    <title>..::Facultad de Entre Rios::..</title>
+  </head>
+  <body>
+    <!---Arranca el nav (menu)-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="img/logo1.jpg" class="logo" alt=""
+        /></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <!-- <span class="navbar-toggler-icon" style="color: brown;"></span> -->
+          <span id="menu-burger"><i class="icon-menu"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 color">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"
+                ><i class="icon-inicio"></i>Inicio</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link items" href="institucional.html"
+                ><i class="icon-maletin"></i>Institucional</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="icon-users"></i> Bedelia
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="./alumnos.html"
+                    ><i class="icon-user"></i>Alumnos</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./tablaAlumn.html"
+                    ><i class="icon-user"></i>Administración</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="icon-carpeta"></i> Carreras</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link items" href="contacto.html"
+                ><i class="icon-address-book"></i> Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!--cartel rojo de nuestra carrera-->
+      <div class="row mt-4">
+        <div class="col-12 nuestra-carrera">
+          <h1>Nuestra carrera</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <!--Widget de ventana de accesos rapidos-->
+        <aside class="col-12 col-md-4 mt-2">
+          <h5>Accesos Rápidos</h5>
+          <div class="nav flex-column vertical">
+            <a
+              class="nav-link"
+              href="https://g3autogestion.uner.edu.ar/g3w3/acceso"
+              target="_blank"
+              ><i class="icon-lista2"></i> SIU Guarani</a
+            >
+            <a
+              class="nav-link"
+              href="https://campus.uner.edu.ar/fcad/login/index.php"
+              target="_blank"
+              ><i class="icon-users"></i> Campus Virtual</a
+            >
+            <a class="nav-link" href="contacto.html#correos"
+              ><i class="icon-sobre"></i>Correo Institucional</a
+            >
+            <a class="nav-link" href="institucional.html#mision"
+              ><i class="icon-book"></i>La Facultad</a
+            >
+            <a class="nav-link" href="index.html#concurso"
+              ><i class="icon-calendar-empty"></i> Concursos Docentes</a
+            >
+            <a class="nav-link" href="institucional.html#telefonos"
+              ><i class="icon-telefono"></i> Teléfonos útiles</a
+            >
+            <a class="nav-link" href="contacto.html#mapa"
+              ><i class="icon-location"></i> Ubicación</a
+            >
+          </div>
+        </aside>
+
+        <!--Arranca el slider carrusel-->
+        <div class="col-12 col-md-8 mt-2">
+          <h5>Novedades</h5>
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner contenedor-slider">
+              <div class="carousel-item active">
+                <img src="img/imgfcad1.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="img/imgfcad2.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="img/imgfcad8.jpg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fin del slider-->
+
+      <!--Arrancan las noticias-->
+      <div class="row mt-3">
+        <div class="col-12 col-sm-6 col-md-3 mb-2">
+          <div class="card" style="width: auto">
+            <img src="img/beca.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Becas 2023</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#">Seguir Leyendo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 mb-2">
+          <div class="card" style="width: auto">
+            <img
+              src="img/concurso-docente.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 id="concurso" class="card-title">Concurso Docente</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#">Seguir Leyendo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-2">
+          <div class="card" style="width: auto">
+            <img src="img/horario.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Horarios de clase</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#">Seguir Leyendo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 mb-2">
+          <div class="card" style="width: auto">
+            <img src="img/ingresantes.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Ingresantes 2023</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" style="float: right">Seguir Leyendo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fin del container-->
+
+    <!--Arranca el footer-->
+    <div class="container-fluid">
+      <footer class="row d-flex align-items-center mb-3">
+        <div class="col-12 col-md-6">
+          <p class="pie-footer">
+            Facultad de Ciencias de la administración - &copy; 2023
+          </p>
+          <p class="desarrolladores">
+            Desarrollado por: Sandoval J. - Flores D. - Ramirez C. - Ellenberger
+            G.
+          </p>
+          <p class="direccion">
+            <i class="icon-telefono"></i> (0345) 4231400 -Concordia Entre Ríos-
+          </p>
+        </div>
+
+        <div class="col-12 col-md-6 text-center">
+          <ul class="iconos-redes">
+            <a href=""><img src="img/icono-face.png" alt="" /></a>
+            <a href=""><img src="img/icono-instagram.png" alt="" /></a>
+            <a href=""><img src="img/icono-youtube.png" alt="" /></a>
+            <a href=""><img src="img/icono-twitter.png" alt="" /></a>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
