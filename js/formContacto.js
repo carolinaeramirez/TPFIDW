@@ -37,7 +37,7 @@ function enviar() {
     } else {
       var dataArray = [];
     }
-  
+  console.log(dataForm)
     dataArray.push(dataForm); //agregamos los nuevos datos con un push al array
     localStorage.setItem("datos", JSON.stringify(dataArray)); // metemos los datos a localStorage.
     //llamamos a la funcion clear para que limpie los campos del formulario despues de enviarlos.
