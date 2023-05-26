@@ -10,8 +10,12 @@ function buscar() {
       var datosAlmacenados = JSON.parse(storedData);
       // filtramos los datos parseados y le decimos que muestre los que incluyan el dato ingresado
       var resultados = datosAlmacenados.filter(function (item) {
-        var nombreItem = item.nombre.toLowerCase();
-        return nombreItem.includes(datoIngresado);
+        var nombreItem = item.dni;
+        if (nombreItem === datoIngresado) {
+          return item;
+        } else {
+          console.log("no se encuentra el dato");
+        }
       });
       //convertimos los resultados en objeto para poder mostrarlos
       result = JSON.stringify(resultados);
