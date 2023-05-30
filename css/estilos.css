@@ -291,11 +291,130 @@ article p{
     color: #fff;
 }
 
+/*Pagina de Carreras*/
+.Contenedor{
+    width: 200%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    display: center;
+}
+.caja1{
+    width: 330px;
+    height: 400px;
+    float: left;
+    padding: 15px 10px 10px 50px;
+    border-spacing: 5px;
+}
+.caja2{
+    width: 330px;
+    height: 250px;
+    float: left;
+    padding: 15px;
+}
+.caja3{
+    width: 330px;
+    height: 600px;
+    float: left;
+    padding: 15px;
+}
+.caja1 h3 {
+    background-color: #001E2D;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 5px;
+}
+.caja2 h3 {
+    background-color: #001E2D;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 5px;
+}
+.caja3 h3 {
+    background-color: #001E2D;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 5px;
+}
+ol{
+    list-style-type: none;
+}
+/* Al pasar el mouse sobre la LISTA */
+ol:hover li a {
+    transform: scale(1);
+    opacity: 0.7;
+    filter: blur(0.5px); 
+}
+/* Al pasar el mouse sobre un LINK dentro de la lista */
+ol li a:hover {
+    transform: scale(1.1); 
+    opacity: 1;
+    filter: blur(0px);
+}
+ol li a:hover img{
+    transform: scale(1.1);
+}
+/* Al ENTRAR con el mouse sobre el link dentro de la lista */
+ol li a:before {
+    content: "";
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+    width: 100%;        
+    height: 100%;      
+    transition: 0.4s;
+    transform-origin: right;
+    transform: scaleX(1.1); 
+    z-index: -1;      
+} 
+.nav-link img{
+    height: 25px;
+    margin: 2px 5px;
+    display: inline-block;
+    text-align: center;
+}
+.caja .barra{
+    display: flex;
+    align-items:center;
+    height: 50px;
+    width: 100%;
+    background-color: #880000;
+    box-shadow: 5px -5px 3px;
+    margin-top: 150px;
 
+}
+.caja .barra .nav-item{
+    width: 100px;
+    height: 100px;
+    background-color: #001E2D;
+    border-radius: 70%;
+    box-shadow: 5px -5px 3px;
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    text-align: center;
+    font-size: 12px;
+}
 
+.icon-carpeta{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    font-size: 40px;
 
-
-
+}
 
 
 

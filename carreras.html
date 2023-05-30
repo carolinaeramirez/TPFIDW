@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="stylesheet" href="fontello/css/jose.css" />
+  <link rel="shortcut icon" href="img/logo3.jpg" type="image/x-icon" />
+    <title>Carreras</title>
+</head>
+<body>
+  <div class= Contenedor  id="inicio">
+        <!---Arranca el nav (menu)-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"
+                ><img src="img/logo1.jpg" class="logo" alt=""
+              /></a>
+      
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+          <!-- <span class="navbar-toggler-icon" style="color: brown;"></span> -->
+          <span id="menu-burger"><i class="icon-menu"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 color">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"
+                ><i class="icon-inicio"></i>Inicio</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link items" href="institucional.html"
+                ><i class="icon-maletin"></i>Institucional</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="icon-users"></i> Bedelia
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="./alumnos.html"
+                    ><i class="icon-user"></i>Alumnos</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./tablaAlumn.html"
+                    ><i class="icon-user"></i>Administración</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="./carreras.html"
+                    ><i class="icon-carpeta"></i> Carreras</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link items" href="contacto.html"
+                ><i class="icon-address-book"></i> Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+        <!--cartel rojo de nuestra carrera-->
+        <div class="row mt-4">
+          <div class="col-12 nuestra-carrera">
+            <h1>Carreras</h1>
+          </div>
+        </div>
+    </div>
+    <div class="caja1">
+        <ol>
+            <h3>Carreras de Grado</h3>
+            <li><a class="nav-link" href="#contador"><img src="img/comprobado.png"> Contador Público </a></li>
+            <li><a class="nav-link" href="#liccsadmi"><img src="img/comprobado.png"> Licenciatura en Ciencias de la Administración </a></li>
+            <li><a class="nav-link" href="#sistemas"><img src="img/comprobado.png"> Licenciatura en Sistemas </a></li>
+            <li><a class="nav-link" href="#portugues"><img src="img/comprobado.png"> Profesorado en Portugués </a></li>
+            <li><a class="nav-link" href="#turismo"><img src="img/comprobado.png"> Licenciatura en Turismo </a></li>
+        </ol>
+    </div>
+    <div class="caja2">
+        <ol>
+            <h3>Carrera de Pregrado</h3>
+            <li><a class="nav-link" href="#programadorsis"><img src="img/comprobado.png"> Programador de Sistemas </a></li>
+        </ol>
+        <ol>
+            <h3>Carrera de Pregrado a termino</h3>
+            <li><a class="nav-link" href="#desarrolloweb"><img src="img/comprobado.png"> Tecnicatura Universitaria en Desarrollo Web </a></li>
+        </ol>
+    </div>
+    <div class="caja3">
+        <ol>
+            <h3>Carrera de Posgrado</h3>
+            <li><a class="nav-link" href="#gestioninova"><img src="img/comprobado.png"> Especialización en Gestión de la Innovación y la Vinculación Tecnológica </a></li>
+            <li><a class="nav-link" href="#empresaspm"><img src="img/comprobado.png"> Especialización en Gestión de las Pequeñas y Medianas Empresas  </a></li>
+            <li><a class="nav-link" href="#impuestos"><img src="img/comprobado.png"> Especialización en Impuestos </a></li>
+            <li><a class="nav-link" href="#maestriasist"><img src="img/comprobado.png"> Maestría en Sistemas de Información </a></li>
+        </ol>
+    </div>
+    <div class="caja">
+      <div class="barra">
+          <table>
+          <tr>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/duracion.png"><br> DURACION: <br> 5 años </a> </li>
+            </th>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/modalidad.png"><br> MODALIDAD: <br> Presencial </a> </li> 
+            </th>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/tipo.png"><br> TIPO: <br> Universitaria de Grado </a> </li>
+            </th>
+          </tr>
+          </table>
+      </div>
+      <br>
+      <main class="row mt-3"><br>
+          <h2 id="contador">Contador Público</h2>
+          <article class="col-12 col-md-4"><br>
+            <h3 >Perfil del Graduado</h3>
+            <p>El perfil del contador público es el de un profesional universitario que cuenta con las bases teóricas, metodológicas y técnicas para obtener una visión multidisciplinaria de los procesos relacionados con los sistemas de información y de control desde una formación en la que ha definido un sesgo personal en cuanto a su especialización, de conformidad con la flexibilidad que sobre el particular se prevé en el plan de estudios.
+
+              Está preparado para desempeñar su profesión en todo tipo de organizaciones (públicas o privadas; grandes, medianas o pequeñas; simples o complejas; no gubernamentales, otra clase de entes sin fines de lucro o empresas), como miembro de ellas o como asesor o consultor profesional independiente, siempre comprometido con las necesidades, presentes y futuras, del medio local, regional o internacional en el que ejerza su actividad.
+              
+              Se trata de un especialista en la generación y el análisis de información contable y administrativa para asistir en la conducción de todo tipo de entes.
+              
+              Está capacitado para:
+              actuar en el marco de las leyes vigentes y proponer modificaciones, si correspondieren, teniendo en cuenta los valores éticos del medio en el que se desenvuelve;
+              aplicar a situaciones concretas, en tiempo y forma, las competencias adquiridas a lo largo de su carrera, identificar los problemas y presentar alternativas de solución;
+              participar en equipos de trabajo con profesionales colegas e interdisciplinarios;
+              analizar su propia práctica y reflexionar sobre ella para superarla con actualizaciones constantes y nuevos aprendizajes que le permitirán reconocerse como profesional responsable, consciente de lo que sabe y no sabe;
+              adecuar su comportamiento a referencias éticas, particularmente al brindar su contribución profesional al desarrollo social con equidad.</p>
+          </article>
+          <article class="col-12 col-md-4"><br>
+            <h3>Alcance del Título</h3>
+            <p>Con las competencias adquiridas, el contador público es apto para ejercer su rol profesional mediante la resolución de problemas complejos relacionados con:
+
+              participar en el diseño, la implementación y la dirección de los sistemas de información contable adecuados a los requerimientos del ente correspondiente;
+              intervenir en la preparación y la administración de presupuestos, en la evaluación de proyectos y en la elaboración de estudios de factibilidad económica y financiera;
+              planificar el diseño, la implementación y la operación de sistemas de control de gestión, fundamentalmente a partir de la información contable y la auditoría operativa.
+              supervisar la preparación y realizar análisis, revisión e interpretación de estados contables históricos y proyectados, presupuestos y sistemas de costos;
+              planificar y ejecutar tareas de auditoría de cumplimiento y de eficiencia y emitir los correspondientes informes y dictámenes con opinión, para usuarios internos o externos;
+              emitir dictámenes e informes económicos y financieros para uso interno o externo;
+              diagnosticar y evaluar asuntos relacionados con la medición y el registro de las operaciones de la unidad económica en sus aspectos financieros, económicos y sociales;
+              cumplimentar las funciones de síndico societario; intervenir en estudios e investigaciones interdisciplinarias vinculadas con las organizaciones y su inserción contextual;
+              ejecutar las tareas reservadas a su profesión por la legislación vigente.</p>
+          </article>
+          <article class="col-12 col-md-4"><br>
+            <h3>Inconvencias Profesionales</h3>
+            <p>Son las determinadas en las partes pertinentes de las normas que a nivel nacional y provincial regulan el ejercicio de las profesiones relacionadas a las Ciencias Económicas.
+
+              Actividades profesionales reservadas, determinadas en el Anexo V de la Resolución ME N° 3400/17:
+              
+              Diseñar, dirigir e implementar sistemas de información contable en todos los segmentos de la contabilidad y costos.
+              Registrar, medir y exponer la información contable, histórica y proyectada, para todo tipo de organizaciones y unidades económicas.
+              Dirigir y realizar procedimientos de auditoría, y dictaminar en materia contable e impositiva.
+              Realizar los procesos de sindicatura en sociedades, concursos y quiebras.</p><br>
+              <h3>PLAN DE ESTUDIO DISPONIBLE PARA DESCARGAR</h3>
+              <embed src="Planes-de-estudios/contador.pdf" type="application/pdf">
+              <a href="Planes-de-estudios/contador.pdf" class="btn-descarga icon-carpeta"  download="plan_estudio" title="Descargar Plan de Estudio "></a>
+              <a href="#inicio"> Volver al principio</a>    
+            </article>
+        </main>
+      <div class="barra">
+        <table>
+        <tr>
+          <th><li class="nav-item">
+          <a class="nav-link"><img src="img/duracion.png"><br> DURACION: <br> 5 años </a> </li>
+          </th>
+          <th><li class="nav-item">
+          <a class="nav-link"><img src="img/modalidad.png"><br> MODALIDAD: <br> Presencial </a> </li> 
+          </th>
+          <th><li class="nav-item">
+          <a class="nav-link"><img src="img/tipo.png"><br> TIPO: <br> Universitaria de Grado </a> </li>
+          </th>
+        </tr>
+        </table>
+      </div>
+      <br>
+      <main class="row mt-3">
+      <h2 id="liccsadmi">LICENCIATURA EN CIENCIAS DE LA ADMINISTRACIÓN</h2>
+      <article class="col-12 col-md-4">
+          <h3 >Perfil del Graduado</h3>
+          <p>El perfil del licenciado en ciencias de la administración es el de un profesional universitario que cuenta con las bases teóricas, metodológicas y técnicas para obtener una visión multidisciplinaria del proceso administrativo desde una formación en la que ha definido un sesgo personal en cuanto a su especialización, de conformidad con la flexibilidad que sobre el particular se prevé en el plan de estudios.
+
+            Está preparado para desempeñar su profesión en todo tipo de organizaciones (públicas o privadas; grandes, medianas o pequeñas; simples o complejas; no gubernamentales, otra clase de entes sin fines de lucro o empresas), como miembro de ellas o como asesor o consultor profesional independiente, siempre comprometido con las necesidades presentes y futuras del medio local, regional o internacional en el que ejerza su actividad.
+            
+            Se trata de un especialista en coordinar los esfuerzos humanos y la aplicación de otros recursos para el logro de los objetivos organizacionales.
+            
+            Está capacitado para:
+            
+            Actuar en el marco de las leyes vigentes y proponer modificaciones si correspondieren teniendo en cuenta los valores éticos del medio en el que se desenvuelve;
+            Aplicar a situaciones concretas, en tiempo y forma, las competencias adquiridas a lo largo de su carrera, identificar los problemas y presentar alternativas de solución;
+            Participar en equipos de trabajo con profesionales colegas e interdisciplinarios;
+            Analizar su propia práctica y reflexionar sobre ella para superarla con actualizaciones constantes y nuevos aprendizajes que le permitirán reconocerse como profesional responsable, consciente de lo que sabe y no sabe;
+            Adecuar su comportamiento a referencias éticas, particularmente al brindar su contribución profesional al desarrollo social con equidad.</p>
+      </article>
+      <article class="col-12 col-md-4">
+        <h3>Alcance del Título</h3>
+        <p>Con las competencias adquiridas, el licenciado en ciencias de la administración es apto para ejercer su rol profesional mediante la resolución de problemas complejos relacionados con:
+
+          Diseñar e implementar las configuraciones organizativas más apropiadas, en función de los objetivos, estrategias, tamaños, recursos y circunstancias de las organizaciones.
+          Planificar, organizar, coordinar y controlar adecuadamente actividades de las mismas.
+          Realizar el diagnóstico de problemas actuales y potenciales de las organizaciones, como también plantear y ejecutar propuestas de solución o de mejoras.
+          Proponer y llevar a cabo políticas, estrategias, sistemas, métodos y procedimientos para las distintas unidades de negocios, así como para las diversas áreas funcionales, tales como comercialización, producción, recursos humanos, finanzas y control.
+          Formular, evaluar y gestionar proyectos y planes de negocios, diseñar y asesorar en lo concerniente a estructuras, sistemas y procesos administrativos, diagnosticar sobre la calidad de la gestión, realizar tutorías en esa materia e implementar planes de mejoras, asesorar y prestar asistencia técnica para las funciones directivas de organismos públicos y privados.
+          Participar en el diagnóstico de la situación de la organización frente a su responsabilidad social, así como desarrollar e implementar políticas y programas sobre ese particular, intervenir en tareas de consultoría y administración de personal, en particular las de búsqueda, evaluación, selección, compensación y desarrollo, elaborar presupuestos, efectuar análisis financieros y actuar en la gestión correspondiente.
+          Actuar judicialmente en compulsas y peritajes propios de las incumbencias correspondientes, actuar como administrador en intervenciones judiciales o como coadministrador en el marco de la legislación concursal.
+          Ejecutar las tareas reservadas a su profesión por la legislación vigente.</p>
+      </article>
+      <article class="col-12 col-md-4">
+          <h3>Inconvencias Profesionales</h3>
+          <p>Son las determinadas en las partes pertinentes de las normas que a nivel nacional y provincial regulan el ejercicio de las profesiones relacionadas a las Ciencias Económicas.</p><br>
+            <h3>PLAN DE ESTUDIO DISPONIBLE PARA DESCARGAR</h3>
+              <a href="Planes-de-estudios/lic.admi.pdf" class="btn-descarga icon-carpeta"  download="plan_estudio" title="Descargar Plan de Estudio "></a>
+              <a href="#inicio"> Volver al principio</a>   
+      </article>
+      </main>
+      <div class="barra">
+      <table>
+      <tr>
+        <th><li class="nav-item">
+        <a class="nav-link"><img src="img/duracion.png"><br> DURACION: <br> 5 años </a> </li>
+        </th>
+        <th><li class="nav-item">
+        <a class="nav-link"><img src="img/modalidad.png"><br> MODALIDAD: <br> Presencial </a> </li> 
+        </th>
+        <th><li class="nav-item">
+        <a class="nav-link"><img src="img/tipo.png"><br> TIPO: <br> Universitaria de Grado </a> </li>
+        </th>
+      </tr>
+      </table>
+      </div><br>
+      <main class="row mt-3">
+        <h2 id="sistemas">Licenciatura en Sistemas</h2>
+        <article class="col-12 col-md-4"><br>
+            <h3 >Perfil del Graduado</h3>
+            <p>El desarrollo del programa de estudios forma al graduado en competencias específicas y conocimientos de las ciencias informáticas, especialmente en lo relacionado a la proyección y construcción de software, en normas de calidad de software, en arquitecturas de computadoras, en entornos de seguridad informática, en el diseño y utilización de bases de datos y en inteligencia artificial. En relación, el graduado será competente para dirigir, controlar la implementación y el mantenimiento de lo anteriormente mencionado.</p>
+        </article>
+        <article class="col-12 col-md-4"><br>
+          <h3>Alcance del Título</h3>
+          <p>Con las competencias adquiridas, el Licenciado en Sistemas es apto para ejercer su rol profesional mediante la resolución de problemas complejos relacionados con:
+
+            Planificar, dirigir, realizar y/o evaluar proyectos de relevamiento de problemas del mundo real. Realizar la especificación formal, diseño, implementación, prueba, verificación, validación, mantenimiento y control de calidad de sistemas de software que se ejecuten sobre sistemas de procesamiento de datos.
+            Organizar, dirigir y controlar las áreas informáticas de las organizaciones, seleccionando y capacitando al personal técnico de los mismos.
+            Dirigir el relevamiento y análisis de los procesos funcionales de una Organización, con la finalidad de dirigir proyectos de diseño de Sistemas de Información asociados, así como los Sistemas de Software que hagan a su funcionamiento. Determinar, regular y administrar las pautas operativas y reglas de control que hacen al funcionamiento de las áreas informáticas de las empresas y organizaciones.
+            Entender, planificar y/o participar de los estudios técnicos-económicos de factibilidad y/o referentes a la configuración y dimensionamiento de sistemas de procesamiento de información. Supervisar la implantación de los sistemas de información y organizar y capacitar al personal afectado por dichos sistemas.
+            Establecer métricas y normas de calidad y seguridad de software, controlando las mismas a fin de tener un producto industrial que respete las normas nacionales e internacionales. Controlar la especificación formal del producto, del proceso de diseño, desarrollo, implementación y mantenimiento. Establecer métricas de validación y certificación de calidad.
+            Planificar, dirigir, realizar y/o evaluar los sistemas de seguridad en el almacenamiento y procesamiento de la información. Realizar la especificación, diseño, desarrollo, implementación y mantenimiento de los componentes de seguridad de información embebidos en los sistemas físicos y en los sistemas de software de aplicación. Establecer y controlar las metodologías de procesamiento de datos orientadas a seguridad, incluyendo data ware-housing.
+            Efectuar las tareas de Auditoría de los Sistemas Informáticos. Realizar arbitrajes, pericias y tasaciones relacionados con los Sistemas Informáticos.
+            Realizar tareas como docente universitario en Informática en todos los niveles, de acuerdo a la jerarquía del título de grado máximo. Realizar tareas de enseñanza de la especialidad en todos los niveles educativos. Planificar y desarrollar cursos de actualización profesional y capacitación en general en Sistemas/Sistemas de Información.</p>
+        </article>
+        <article class="col-12 col-md-4"><br>
+          <h3>Actividades Reservadas</h3>
+          <p>Actividades profesionales reservadas según Resolución ME 1254/2018
+
+            Especificar, proyectar y desarrollar sistemas de información, sistemas de comunicación de datos y software cuya utilización pueda afectar la seguridad, salud, bienes o derechos.
+            Proyectar y dirigir lo referido a seguridad informática.
+            Establecer métricas y normas de calidad de software.
+            Certificar el funcionamiento, condición de uso o estado de lo mencionado anteriormente.
+            Dirigir y controlar la implementación, operación y mantenimiento de lo anteriormente mencionado.</p><br>
+            <h3>PLAN DE ESTUDIO DISPONIBLE PARA DESCARGAR</h3>
+            <a href="Planes-de-estudios/lic.sistemas.pdf" class="btn-descarga icon-carpeta"  download="plan_estudio" title="Descargar Plan de Estudio "></a>
+              <a href="#inicio"> Volver al principio</a>    
+        </article>
+        </main>
+
+        <div class="barra">
+        <table>
+        <tr>
+          <th><li class="nav-item">
+          <a class="nav-link"><img src="img/duracion.png"><br> DURACION: <br> 4 años </a> </li>
+          </th>
+          <th><li class="nav-item">
+          <a class="nav-link"><img src="img/modalidad.png"><br> MODALIDAD: <br> Presencial </a> </li> 
+          </th>
+          <th><li class="nav-item">
+          <a class="nav-link"><img src="img/tipo.png"><br> TIPO: <br> Universitaria de Grado </a> </li>
+          </th>
+        </tr>
+        </table>
+        </div><br>
+        <main class="row mt-3">
+          <h2 id="portugues">Profesorado en Portugués</h2>
+          <article class="col-12 col-md-4"><br>
+              <h3 >Perfil del Graduado</h3>
+              <p>Al finalizar su formación, el graduado será un profesional con firmes conocimientos teóricos y prácticos, preparado para cumplir con las diferentes tareas que deba ejercer, comprometido con el contexto socio-cultural de la región, consciente del papel activo y crítico que tiene en la defensa de los derechos e identidades lingüístico-culturales, con una actitud creativa y favorable a la autoevaluación permanente de su desempeño profesional.
+
+                El profesor de portugués, estará formado para:
+                
+                Enseñar la lengua portuguesa con firmes conocimientos disciplinares y una sólida formación pedagógico-didáctica, en distintas modalidades y niveles;
+                Participar en las instituciones educativas proponiendo alternativas, estrategias o proyectos para la construcción de programas de enseñanza que favorezcan la calidad de la educación;
+                Intervenir en la distribución social del conocimiento, en tanto mediador cultural capaz de interpretar las principales tendencias de cambio en la sociedad y su influencia en el ejercicio de la ciudadanía y las políticas lingüísticas;
+                Favorecer la construcción de aprendizajes significativos sobre la lengua portuguesa, a partir de una intervención pedagógica responsable;
+                Promover la enseñanza del portugués como práctica político-social que incide en la formación de ciudadanos autónomos, capaces de desarrollar una actitud positiva frente a la diversidad y la interculturalidad, en tanto enunciadores que intervienen en la vida pública y en los procesos de toma de decisiones,
+                Desarrollar una actitud crítica y flexible que le permita respetar puntos de vista, cooperar en equipos interdisciplinarios y observar las normas y los principios éticos que rigen y orientan la actividad profesional docente;
+                Producir conocimiento sobre las instituciones educativas, sus procesos y sujetos, así como sobre la enseñanza de la lengua portuguesa, a fin de desarrollar una actitud transformadora;
+                Fortalecer sus propios procesos de formación continua, desarrollando una actitud reflexiva y crítica, conforme los avances del conocimiento.</p>
+          </article>
+          <article class="col-12 col-md-4"><br>
+            <h3>Alcance del Título</h3>
+            <p>Planificar, conducir y evaluar los procesos de enseñanza y de aprendizaje a partir del ejercicio de la docencia en el área lengua extranjera (portugués) en los diferentes niveles del sistema educativo y en los sistemas no formales de educación.
+              Generar programas de extensión y de capacitación en las áreas de su competencia, como así también planes de educación a distancia.
+              Asesorar e integrar equipos para la elaboración y aplicación de políticas y proyectos de planificación lingüística.
+              Asesorar, coordinar y ejecutar proyectos de diseño, elaboración, corrección y evaluación de materiales didácticos y dispositivos curriculares sobre su especialidad.
+              Integrar y coordinar equipos de trabajo y asesoría en el área de su especialidad, en el seno de las agencias que lo requieran (Institutos de investigación, entidades culturales, ONGs, otros).
+              Asesorar en lo referido a todas las actividades profesionales que trabajan con producción de documentos escritos.
+              Actuar como idóneo en causas judiciales que requieran la interpretación de uno o varios textos en lengua portuguesa, cuando no hubiere perito traductor habilitado.
+              Continuar su formación y especialización, y completar estudios de posgrado en universidades nacionales y extranjeras.</p>
+        </article>
+        <article class="col-12 col-md-4"><br>
+              <h3>PLAN DE ESTUDIO DISPONIBLE PARA DESCARGAR</h3>
+              <a href="Planes-de-estudios/portugues.pdf" class="btn-descarga icon-carpeta"  download="plan_estudio" title="Descargar Plan de Estudio "></a>
+                <a href="#inicio"> Volver al principio</a>    
+        </article>
+        </main>
+        <div class="barra">
+          <table>
+          <tr>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/duracion.png"><br> DURACION: <br> 4 años </a> </li>
+            </th>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/modalidad.png"><br> MODALIDAD: <br> Presencial </a> </li> 
+            </th>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/tipo.png"><br> TIPO: <br> Universitaria de Grado </a> </li>
+            </th>
+          </tr>
+          </table>
+        </div><br>
+        <main class="row mt-3">
+            <h2 id="turismo">Licenciatura en Turismo</h2>
+            <article class="col-12 col-md-4"><br>
+              <h3 >Perfil del Graduado</h3>
+              <p>El plan de estudios apunta a la  formación integral de profesionales en el área turismo, en tanto una actividad que genera interrelaciones sociales, económicas, culturales, ambientales y políticas. Por ser una  actividad dinámica  presenta constantes desafíos que requieren un profesional en condiciones de abordar la realidad turística desde una perspectiva que articule permanentemente el saber científico y la práctica.
+
+                El profesional deberá ser capaz de conocer las problemáticas propias de la actividad y actuar sobre la realidad con sentido crítico y eficiencia. Para ello requiere de:
+                
+                Conocimiento de las potencialidades turísticas locales y regionales y del contexto histórico, económico, social, cultural y político.
+                Conocimiento sobre el campo de la administración y la gestión turística que permitan al egresado participar y colaborar con la dirección de organizaciones afines al turismo.
+                Conocimiento de requerimientos legales en el ámbito del sector turístico.</p>
+            </article>
+            <article class="col-12 col-md-4"><br>
+              <h3>Alcance del Título</h3>
+              <p>Con las competencias adquiridas el Licenciado en Turismo podrá ejercer su rol profesional en diferentes áreas de la actividad turística tanto en empresas privadas como en la función pública.  El Lic. en Turismo estará capacitado para investigar, diagnosticar y promover el Turismo a través de planes, proyectos y programas de desarrollo, dar asistencia y asesoramiento al sector turístico a través de procedimientos adecuados incluyendo el análisis de impacto de su utilización. Asimismo, podrá asesorar, planificar y ejecutar planes de comunicación turística, gerenciar empresas prestadoras de servicios turísticos y crear su propia empresa de servicios turísticos.
+
+                El licenciado en turismo  estará capacitado para:
+                
+                Realizar estudios e investigación teórica y aplicada del  turismo.
+                Elaborar y diseñar políticas turísticas a nivel nacional en el marco de la integración regional.
+                Elaborar, formular, dirigir y evaluar planes, proyectos y programas de desarrollo turísticos.
+                Coordinar y dirigir equipos interdisciplinarios y multidisciplinarios de investigación.
+                Asesorar acerca  de la estructura y funcionamiento técnico de entes, instituciones o empresas de actividades turísticas.
+                Planificar, organizar y controlar actividades específicas en áreas de su competencia en el ámbito público y privado.
+                Asesorar y coordinar acciones relativas a la preservación de los diferentes aspectos del patrimonio turístico y de recreación.</p>
+          </article>
+          <article class="col-12 col-md-4"><br>
+              <h3>PLAN DE ESTUDIO DISPONIBLE PARA DESCARGAR</h3>
+              <a href="Planes-de-estudios/turismo.pdf" class="btn-descarga icon-carpeta"  download="plan_estudio" title="Descargar Plan de Estudio "></a>
+                <a href="#inicio"> Volver al principio</a>    
+            </article>
+        </main>
+        <div class="barra">
+          <table>
+          <tr>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/duracion.png"><br> DURACION: <br> 3 años </a> </li>
+            </th>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/modalidad.png"><br> MODALIDAD: <br> Presencial </a> </li> 
+            </th>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/tipo.png"><br> TIPO: <br> Univer. de Pre-Grado </a> </li>
+            </th>
+          </tr>
+          </table>
+      </div>
+      <br>
+      <main class="row mt-3"><br>
+          <h2 id="programadorsis">Programador de Sistemas</h2>
+          <article class="col-12 col-md-4"><br>
+            <h3 >Perfil del Graduado</h3>
+            <p>Los conocimientos que cimientan la actividad del Programador de Sistemas están orientados a adquirir una sólida formación en las áreas de Matemática, Computación básica, Lógica computacional y específicamente en lo relacionado a lenguajes de programación, tanto en los paradigmas procedurales, lógicos y orientado a objetos.
+
+              Por otra parte, el profesional está capacitado para:
+              
+              Trabajar en equipos interdisciplinarios.
+              Dirigir personal auxiliar.</p>
+          </article>
+          <article class="col-12 col-md-4"><br>
+            <h3>Alcance del Título</h3>
+            <p>Con las competencias adquiridas, el Programador de Sistemas es apto para la resolución de  problemas relacionados con:
+
+              Definir las estrategias, técnicas y metodologías de programación de sistemas.
+              Desarrollar, administrar y controlar las actividades de programación de sistemas a implementar y sistemas instalados, asegurando su funcionamiento según definiciones de performance establecidas.
+              Diseñar e implementar pruebas de funcionamiento de programas y efectuar las depuraciones de los programas codificados.
+              Implementar sistemas informáticos estableciendo el entorno para que operen las mejores condiciones posibles.</p>
+          </article>
+          <article class="col-12 col-md-4"><br>
+              <h3>PLAN DE ESTUDIO DISPONIBLE PARA DESCARGAR</h3>
+              <a href="Planes-de-estudios/programador.pdf" class="btn-descarga icon-carpeta"  download="plan_estudio" title="Descargar Plan de Estudio "></a>
+                <a href="#inicio"> Volver al principio</a>    
+            </article>
+        </main>
+        <div class="barra">
+          <table>
+          <tr>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/duracion.png"><br> DURACION: <br> 3 años </a> </li>
+            </th>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/modalidad.png"><br> MODALIDAD: <br> Virtual </a> </li> 
+            </th>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/tipo.png"><br> TIPO: <br> Univer. de Pre-Grado </a> </li>
+            </th>
+          </tr>
+          </table>
+      </div>
+      <br>
+      <main class="row mt-3"><br>
+          <h2 id="desarrolloweb">Tecnicatura Universitaria en Desarrollo Web</h2>
+          <article class="col-12 col-md-4"><br>
+            <h3 >Perfil del Graduado</h3>
+            <p>El Técnico Universitario en Programación Web puede desempeñarse de manera independiente o en relación de dependencia en cualquier tipo de organización.
+
+              Estará orientado especialmente al mercado laboral vinculado con la interrelación entre un usuario final y el diseño y producción de aplicaciones que tiene a la Web como medio de ejecución.
+              
+              Contará con competencias que le permitirán ser capaz de planificar, diseñar, desarrollar e implementar aplicaciones en entornos web y con habilidades adecuadas para participar de grupos interdisciplinarios de diversas ramas de la ciencia y la tecnología para aplicar sus conocimientos como asesor técnico en el desarrollo de sistemas informáticos que utilizan la web como medio.
+              
+              Su formación técnica le permitirá desarrollar aplicaciones de carácter general y aplicaciones destinadas a usos específicos basadas en tecnologías internet, con las competencias necesarias para seleccionar y aplicar herramientas informáticas orientadas al desarrollo y diseño de software de aplicaciones o software como servicio.</p>
+          </article>
+          <article class="col-12 col-md-4"><br>
+            <h3>Alcance del Título</h3>
+            <p>El Técnico Universitario en Desarrollo Web estará tendrá las competencias para
+
+              Programar aplicaciones utilizando tecnologías de desarrollo web.
+              Participar en la selección de tecnologías y herramientas para el desarrollo de aplicaciones.
+              Integrar equipos de proyectos de software, de cualquier escala, en las etapas de análisis, desarrollo e implantación de software
+              Actuar como asesor técnico en el desarrollo de sistemas informáticos que utilizan a la web como medio.</p>
+          </article>
+          <article class="col-12 col-md-4"><br>
+              <h3>PLAN DE ESTUDIO DISPONIBLE PARA DESCARGAR</h3>
+              <a href="Planes-de-estudios/desarrollo.pdf" class="btn-descarga icon-carpeta"  download="plan_estudio" title="Descargar Plan de Estudio "></a>
+                <a href="#inicio"> Volver al principio</a>    
+            </article>
+        </main>
+        <div class="barra">
+          <table>
+          <tr>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/duracion.png"><br> DURACION: <br> 3 cuatrimestres </a> </li>
+            </th>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/modalidad.png"><br> MODALIDAD: <br> Presencial </a> </li> 
+            </th>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/tipo.png"><br> TIPO: <br> Univer. de Post-Grado </a> </li>
+            </th>
+          </tr>
+          </table>
+      </div>
+      <br>
+      <main class="row mt-3"><br>
+          <h2 id="gestioninova">ESPECIALIZACIÓN EN GESTIÓN DE LA INNOVACIÓN Y LA VINCULACIÓN TECNOLÓGICA</h2>
+          <article class="col-12 col-md-4"><br>
+            <h3 >Perfil del Graduado</h3>
+            <p>Un GESTOR TECNOLÓGICO es esencialmente un agente de cambio que desarrolla competencias actitudinales para la innovación, detecta oportunidades en su ámbito laboral y es capaz de articular los conocimientos con la actividad productiva y gestionarlos en beneficio de su organización. Es emprendedor, creativo y proactivo.
+
+              La carrera está orientada a graduados que deseen desarrollar competencias para el emprendedurismo y la innovación.</p>
+          </article>
+          <article class="col-12 col-md-4"><br>
+            <h3>Alcance del Título</h3>
+            <p>Esta especialización tiene como principal objetivo formar GESTORES TECNOLÓGICOS brindando capacitación para la incorporación de nuevas tecnologías en empresas y organizaciones de la región, contribuyendo de esta manera a fortalecer su desarrollo.</p>
+          </article>
+          <article class="col-12 col-md-4"><br>
+              <h3>PLAN DE ESTUDIO DISPONIBLE</h3>
+              <p>Ciclo de Nivelación
+                Introducción a la gestión de la Innovación Tecnológica
+                Ciclo de Formación Básica
+                
+                Gestión de la tecnología y la Innovación
+                Gestión de proyectos
+                Gestión Organizacional
+                Inteligencia Competitiva y Planeamiento Estratégico
+                Metodologías de Diseño para Desarrollo de Proyectos y Solución de Problemas
+                Métodos y Estudios de Factibilidad Tecno-económica, Financiera y Comercial de Proyectos de Innovación Tecnológica
+                Propiedad Intelectual
+                Ciclo de Cursos o Seminarios Electivos
+                Se seleccionarán cursos o seminarios optativos de 30 horas, cada uno. Se definirán de acuerdo a la naturaleza y necesidades de cada ámbito particular (regional, sectorial, institucional)
+                
+                Trabajo Final
+                Proyecto Final (Se desarrollará bajo la modalidad de tutorías)</p>
+                <a href="#inicio"> Volver al principio</a>    
+            </article>
+        </main>
+        <div class="barra">
+          <table>
+          <tr>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/duracion.png"><br> DURACION: <br> 3 meses </a> </li>
+            </th>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/modalidad.png"><br> MODALIDAD: <br> Presencial </a> </li> 
+            </th>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/tipo.png"><br> TIPO: <br> Univer. de Post-Grado </a> </li>
+            </th>
+          </tr>
+          </table>
+      </div>
+      <br>
+      <main class="row mt-3"><br>
+          <h2 id="empresaspm">ESPECIALIZACIÓN EN LA GESTIÓN DE LAS PEQUEÑAS Y MEDIANAS EMPRESAS (PYMES)</h2>
+          <article class="col-12 col-md-4"><br>
+            <h3 >Perfil del Posgraduado</h3>
+            <p>El postgraduado adquirirá una formación especializada en el análisis crítico de las problemáticas de gestión de empresas micro, pequeñas y medianas, para concebir mecanismos que posibiliten la implementación y operación de estrategias de cambios y les permitan participar con mayores aportes económicos y sociales en la economía del país y la región.</p>
+          </article>
+          <article class="col-12 col-md-4"><br>
+            <h3>Alcance del Título</h3>
+            <p>La  Especialización en Gestión de Pequeñas y Medianas Empresas fue acreditada y categorizada B por seis años por la CONEAU según la Res N° 1064/10. Esta carrera que inició en el año 2000 forma parte de la propuesta  de la Facultad de Ciencias de la Administración, y es una especialidad que está  naturalmente integrada a la continuación de la formación del grado universitario.
+              Constituye una etapa en el proceso de formación continua de los graduados que requieren conocimientos actualizados y rigurosos en este ámbito.</p>
+          </article>
+          <article class="col-12 col-md-4"><br>
+            <h3>Inconvencias Profesionales</h3>
+            <p>Son las determinadas en las partes pertinentes de las normas que a nivel nacional y provincial regulan el ejercicio de las profesiones relacionadas a las Ciencias Económicas.
+
+              Actividades profesionales reservadas, determinadas en el Anexo V de la Resolución ME N° 3400/17:
+              
+              Diseñar, dirigir e implementar sistemas de información contable en todos los segmentos de la contabilidad y costos.
+              Registrar, medir y exponer la información contable, histórica y proyectada, para todo tipo de organizaciones y unidades económicas.
+              Dirigir y realizar procedimientos de auditoría, y dictaminar en materia contable e impositiva.
+              Realizar los procesos de sindicatura en sociedades, concursos y quiebras.</p><br>
+              <h3>PLAN DE ESTUDIO DISPONIBLE PARA DESCARGAR</h3>
+              <p>Detalle de los módulos
+                  MÓDULO 1: Planeamiento, gestión y control en la PyME (48 hs.)
+                  MÓDULO 2: Economía y contexto (48 hs.)
+                  MÓDULO 3: Aspectos jurídicos en la PyME (48 hs.)
+                  MÓDULO 4: Comercialización, globalización e integración (48 hs.)
+                  MÓDULO 5: Las empresas familiares (24 hs.)
+                  MÓDULO 6: La administración de recursos humanos en las PyMES (24 hs.)
+                  MÓDULO 7: Administración Financiera
+                  MÓDULO 8: Innovación tecnológica y administración de la calidad (24 hs.)
+                  MÓDULO 9: Tributación (24 hs.)
+                  MODULO 10: Emprendedurismo o Creación de empresas (24Hs)
+                  MODULO 11: Temas de actualidad en Pymes (24 Hs)
+                  MÓDULO 12: Integración y monografía (62 Hs)
+                  Total de horas: 446 </p>
+                <a href="#inicio"> Volver al principio</a>    
+            </article>
+        </main>
+        <div class="barra">
+          <table>
+          <tr>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/duracion.png"><br> DURACION: <br> 3 meses </a> </li>
+            </th>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/modalidad.png"><br> MODALIDAD: <br> Presencial </a> </li> 
+            </th>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/tipo.png"><br> TIPO: <br> Univer. de Post-Grado </a> </li>
+            </th>
+          </tr>
+          </table>
+      </div>
+      <br>
+      <main class="row mt-3"><br>
+          <h2 id="impuestos">ESPECIALIZACIÓN EN IMPUESTOS</h2>
+          <article class="col-12 col-md-4"><br>
+            <h3 >Perfil del Posgraduado</h3>
+            <p>El especialista tendrá competencias para:
+              Interpretar y evaluar sistemas tributarios y su aplicación en contextos económico sociales determinados.
+              Aplicar los conocimientos técnicos adquiridos –teóricos y prácticos- para una mejor gestión y planificación fiscal.
+              Asesorar en materia tributaria al Estado en todos sus órdenes, sus entes descentralizados y otras entidades públicas y privadas.
+              Utilizar los conocimientos teóricos y las capacidades prácticas para interpretar la normativa tributaria y su adecuada aplicación.</p>
+          </article>
+          <article class="col-12 col-md-4"><br>
+            <h3>Objetivos del Título</h3>
+            <p>Que el estudiante:
+
+              Adquiera sólidos conocimientos teórico-prácticos en materia tributaria, como así también respecto de los procedimientos técnicos necesarios para desenvolverse en el ámbito de la asesoría impositiva.
+              Profundice el conocimiento de la normativa fiscal con una intensa aplicación práctica de los procedimientos asociados a las figuras impositivas consideradas</p>
+          </article>
+          <article class="col-12 col-md-4"><br>
+              <h3>PLAN DE ESTUDIO </h3>
+              <p>Área Contable
+                Imposición sobre la Renta
+                Imposición al Patrimonio
+                Imposición sobre los Consumos
+                Imposición provincial y municipal
+                Área Económica
+                
+                Finanzas Públicas
+                Área Jurídica
+                
+                Derecho Tributario
+                Tributación Internacional
+                Área Escritura Académica
+                
+                Taller de Metodología I
+                Taller de Metodología II
+                Total de horas
+                490 hs (390 horas presenciales – 100 horas trabajo final integrador)</p>
+                <a href="#inicio"> Volver al principio</a>    
+            </article>
+        </main>
+        <div class="barra">
+          <table>
+          <tr>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/duracion.png"><br> DURACION: <br> 5 años </a> </li>
+            </th>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/modalidad.png"><br> MODALIDAD: <br> Presencial </a> </li> 
+            </th>
+            <th><li class="nav-item">
+            <a class="nav-link"><img src="img/tipo.png"><br> TIPO: <br> Univer. de Post-Grado </a> </li>
+            </th>
+          </tr>
+          </table>
+      </div>
+      <br>
+      <main class="row mt-3"><br>
+          <h2 id="maestriasist">MAESTRÍA EN SISTEMAS DE INFORMACIÓN</h2>
+          <article class="col-12 col-md-4"><br>
+            <h3 >Perfil del Postgraduado</h3>
+            <p>El posgraduado adquirirá una formación avanzada en concepto y metodologías referidas a la evaluación e incorporación de sistemas de información en las organizaciones, revalorizando su rol como asesor especialista y en la utilización eficiente de sistemas de información para la toma de decisiones y como ventaja competitiva en los procesos de negocios.</p>
+          </article>
+          <article class="col-12 col-md-4"><br>
+            <h3>Título a otorgar</h3>
+            <p>La Universidad Nacional de Entre Ríos otorgará el título de «Magister en Sistemas de Información»
+              La Facultad de Ciencias de la Administración otorgará CERTIFICADOS DE APROBACIÓN DE MÓDULOS, a quienes los hayan aprobado en las condiciones fijadas para cada uno de ellos.</p>
+          </article>
+          <article class="col-12 col-md-4"><br>
+              <h3>PLAN DE ESTUDIO</h3>
+              <p>Módulos Nivelación
+                Comunicaciones y Redes, Programación Avanzada, Bases de Datos, Tópicos de Lenguajes de Programación, Metodología de la Investigación
+                 
+                Módulos Obligatorios
+                Ingeniería de Software
+                Organización y Sistemas de Información
+                Ciencia, Tecnología y Sociedad
+                Técnicas de Orientación a Objetos
+                Sistemas Distribuidos
+                Seguridad, Auditoría y Control de Sistemas de Información
+                Técnicas Avanzadas en Diseño de Software
+                Tópicos Avanzados de Bases de Datos
+                Reingeniería en los Negocios
+                Calidad en el Desarrollo de Software
+                Seminario de Tesis
+                Planificación Proyectos de Software
+                Tesis</p>
+                <a href="#inicio"> Volver al principio</a>    
+            </article>
+        </main>
+   
+      </body>
+      </html>
+
+
+
