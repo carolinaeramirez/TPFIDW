@@ -1,9 +1,3 @@
-// ------------validacion de formulario ------------
-//validacion de los datos
-// function validar(){
-//   console.log("datos correctos");
-// }
-
 //---------------Usamos una funcion para capturar los inputs -----------------
 function enviar() {
   const nombre = document.getElementById("nombre").value;
@@ -14,11 +8,17 @@ function enviar() {
   const apellido = document.getElementById("apellido").value;
   if (apellido === "") {
     alert("Por favor, ingrese su apellido.");
+
   }
-  const fechaNacimiento = document.getElementById("fecha-nacimiento").value;
+  const dni = document.getElementById("dni").value;
+  if (dni === "") {
+    alert("Por favor, ingrese su DNI.");}
+  
+    const fechaNacimiento = document.getElementById("fecha-nacimiento").value;
   if (fechaNacimiento === "") {
     alert("Por favor, ingrese su fecha de nacimiento.");
   }
+
   const nacionalidad = document.getElementById("nacionalidad").value;
   if (nacionalidad === "") {
     alert("Por favor, ingrese su nacionalidad.");
@@ -34,6 +34,7 @@ function enviar() {
   var dataForm = {
     nombre: nombre,
     apellido: apellido,
+    dni: dni,
     fechaNacimiento: fechaNacimiento,
     nacionalidad: nacionalidad,
     email: email,
@@ -53,16 +54,31 @@ function enviar() {
   localStorage.setItem("datos", JSON.stringify(dataArray));
   console.log(dataArray); // metemos los datos a localStorage.
   //llamamos a la funcion clear para que limpie los campos del formulario despues de enviarlos.
-  clear();
+  var txt;
+    if (confirm("Seguro que desar guardar los datos")) {
+      txt = "";
+      clear();
+    } else {
+      txt = "prueba 3";
+    }
+    
+  
 }
+
+
 
 function clear() {
   document.getElementById("nombre").value = "";
   document.getElementById("apellido").value = "";
+  document.getElementById("dni").value = "";
   document.getElementById("fecha-nacimiento").value = "";
   document.getElementById("nacionalidad").value = "";
   document.getElementById("email").value = "";
   document.getElementById("celular").value = "";
+  document.getElementById("carrera").value = "";
+  document.getElementById("cuatrimestre").value = "";
 }
 
+
+ 
 

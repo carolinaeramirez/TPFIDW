@@ -83,3 +83,6 @@ table {
     content: "\f2ed"; /* Código del icono de eliminar en Font Awesome */
     font-family: "Font Awesome 5 Free"; /* Familia de fuentes de Font Awesome */
   }
+  .encabezado{
+    background-color: #066290;
+  }
