@@ -38,27 +38,27 @@ table {
    
   }
   /* Estilos para los botones de acción */
-.button-editar {
-    background-color:#066290; /* Color de fondo */
-    color: white; /* Color de texto */
-    border: none; /* Sin bordes */
-    padding: 8px 17px; /* Relleno */
+/* .button-editar {
+    background-color:#066290; 
+    color: white;
+    border: none; 
+    padding: 8px 17px; 
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 10px;
-    margin-right: 10%; /* Espacio entre botones */
+    margin-right: 10%; 
     border-radius: 5px;
     margin-bottom: 2px;
     margin-left: 10%;
     
-  }
+  } */
   
-  .button-eliminar {
-    background-color: #890f06; /* Color de fondo */
-    color: white; /* Color de texto */
-    border: none; /* Sin bordes */
-    padding: 8px 12px; /* Relleno */
+  .btn-delete {
+    background-color: #890f06; 
+    color: white; 
+    border: none; 
+    padding: 8px 12px; 
     text-align: center;
     text-decoration: none;
     display: inline-block;

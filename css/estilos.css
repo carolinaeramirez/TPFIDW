@@ -77,7 +77,7 @@ h5{
 /*Boton del portafolio*/
 .card-body a{
     float: right;
-    /*background-color: #001E2D;*/
+    background-color: #001E2D;
     color: #000;
     border: 1px solid #000;
     padding: 3px;
