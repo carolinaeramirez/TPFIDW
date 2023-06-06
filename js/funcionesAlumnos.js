@@ -97,7 +97,7 @@ function obtenerId() {
 
 //agregar a la tabla
 function addAlumnoTabla() {
-  const listadoAlumnos = localStorage.getItem("alumnos"); 
+  const listadoAlumnos = localStorage.getItem("alumnos");
   console.log(listadoAlumnos);
   if (listadoAlumnos !== null) {
     const jsonData = JSON.parse(listadoAlumnos);
@@ -121,6 +121,7 @@ function addAlumnoTabla() {
       let texto3 = document.createTextNode(j.dni);
       let texto4 = document.createTextNode(j.nacionalidad);
       let texto5 = document.createTextNode("Eliminar");
+      let texto6 = document.createTextNode("Editar");
 
       // Nodo para el botón de eliminar
       let boton = document.createElement("btn-delete");
@@ -130,11 +131,22 @@ function addAlumnoTabla() {
       boton.style.padding = "2px 6px";
       boton.style.cursor = "pointer";
       boton.style.borderRadius = "4px";
-      
+
       let algo = "eliminar" + j.id;
       boton.setAttribute("id", algo);
-      
-      console.log(boton);
+  
+      // Nodo para el boton editar
+      let editar = document.createElement("btn-edit");
+      editar.style.backgroundColor = "blue";
+      editar.style.color = "white";
+      editar.style.border = "none";
+      editar.style.padding = "2px 6px";
+      editar.style.cursor = "pointer";
+      editar.style.borderRadius = "4px";
+      editar.style.margin="10px"
+
+      let edt = "editar" + j.id;
+      boton.setAttribute("id", edt);
 
       // Árbol de nodos DOM
       cel0.appendChild(texto0);
@@ -142,9 +154,11 @@ function addAlumnoTabla() {
       cel2.appendChild(texto2);
       cel3.appendChild(texto3);
       cel4.appendChild(texto4);
-
+      cel5.appendChild(editar);
       cel5.appendChild(boton);
+
       boton.appendChild(texto5);
+      editar.appendChild(texto6);
 
       row.appendChild(cel0);
       row.appendChild(cel1);
@@ -159,3 +173,37 @@ function addAlumnoTabla() {
     alert("NO HAY DATOS PARA MOSTRAR");
   }
 }
+
+// function eliminarAlumno(id) {
+//   // Obtener los datos almacenados en localStorage
+//   const alumnosData = localStorage.getItem("alumnos");
+
+//   if (alumnosData) {
+//     // Convertir los datos a un array
+//     let alumnosArray = JSON.parse(alumnosData);
+
+//     // Encontrar el índice del alumno en el array basado en su ID
+//     const alumnoIndex = alumnosArray.findIndex((alumno) => alumno.id === id);
+
+//     if (alumnoIndex !== -1) {
+//       // Eliminar el alumno del array
+//       alumnosArray.splice(alumnoIndex, 1);
+
+//       // Actualizar los datos en localStorage
+//       localStorage.setItem("alumnos", JSON.stringify(alumnosArray));
+
+//       console.log("Alumno eliminado:", id);
+//     }
+//   }
+// }
+
+// ...
+
+// Agregar evento de clic al botón de eliminar
+boton.addEventListener("click", function() {
+  const alumnoId = j.id;
+  eliminarAlumno(alumnoId);
+  // Eliminar el elemento de la tabla en el DOM
+  const tableRow = boton.parentNode.parentNode;
+  tableRow.remove();
+});
