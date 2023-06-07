@@ -4,22 +4,33 @@ let index;
 function enviar() {
   obtenerId();
   const nombre = document.getElementById("nombre").value;
-  if (nombre === "") {
+  if (nombre == null || nombre.length == 0 || /^\s+$/.test(nombre) ) {
     alert("Por favor, ingrese su nombre.");
+    e.preventDefault()
+    if (nombre.value.length <6){
+      alert("Nombre muy corto")
+    }
     return false; // Evitar el envío del formulario
   }
   const apellido = document.getElementById("apellido").value;
-  if (apellido === "") {
+  if (apellido  == null || apellido.length == 0 || /^\s+$/.test(apellido) ) {
     alert("Por favor, ingrese su apellido.");
   }
   const dni = document.getElementById("dni").value;
-  if (dni === "") {
-    alert("Por favor, ingrese su DNI.");
+  if( !(/^\d{8}$/.test(dni)) ) {
+    alert("Por favor, ingrese su DNI sin puntos, en caso de ser de menos dígitos, coloque un 0 primero.");
   }
+  return false;
+}
 
   const fechaNacimiento = document.getElementById("fecha-nacimiento").value;
-  if (fechaNacimiento === "") {
-    alert("Por favor, ingrese su fecha de nacimiento.");
+  var ano = document.getElementById("ano").value;
+  var mes = document.getElementById("mes").value;
+  var dia = document.getElementById("dia").value;
+  fechaNacimiento = new Date(ano, mes, dia);    
+  if( !isNaN(fechaNacimiento) ) {
+    alert("Por favor ingrese su fecha de nacimiento con el siguiente formato: DD/MM/AAAA")
+  return false;
   }
 
   const nacionalidad = document.getElementById("nacionalidad").value;
@@ -27,12 +38,16 @@ function enviar() {
     alert("Por favor, ingrese su nacionalidad.");
   }
   const email = document.getElementById("email").value;
-  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  var emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   if (!emailRegex.test(email)) {
     alert("Por favor, ingrese un correo electrónico válido.");
     return false; // Evitar el envío del formulario
   }
   const celular = document.getElementById("celular").value;
+  if( !(/^\d{10}$/.test(celular)) ) {
+    alert("Por favor, ingrese un teléfono válido.");
+    return false;
+} 
   // una vez capturados los inputs guardamos la info en un objeto------
 
   var dataForm = {
@@ -66,7 +81,7 @@ function enviar() {
   } else {
     txt = "prueba 3";
   }
-}
+
 // para limpiar el formulario despues de enviar la informacion.
 function clear() {
   document.getElementById("nombre").value = "";
