@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inscripción Alumnos</title>
+    <title>Listado Alumnos</title>
     <link rel="stylesheet" href="./css/form2.css" />
     <link rel="stylesheet" href="./css/estilos.css" />
     <link
@@ -21,21 +21,27 @@
   </head>
 
   <body onload="addAlumnoTabla()">
-    <table id="listaAlumnos">
-      <thead class="encabezado">
-        <th>Id</th>
-        <th>Nombre</th>
-        <th>Apellido</th>
-        <th>DNI</th>
-        <th>Nacionalidad</th>
-        <th>Acciones</th>
-      </thead>
-      <tbody id="bodyAlumnos">
-        <td></td>
-      </tbody>
-    </table>
+    <div class="table-responsive">
+      <table id="listaAlumnos">
+        <button class="btn-add" > DATOS </button>
+        <thead class="encabezado">
+          <th>Id</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>DNI</th>
+          <th>Nacionalidad</th>
+          <th>Acciones</th>
+        </thead>
+        <tbody id="bodyAlumnos">
+          <td></td> 
+        </tbody>
 
-    <!-- <script src="./js/tablaAlumnos.js"></script> -->
+      </table>
+    </div>
+   
+
+    <script src="./js/tablaAlumnos.js"></script>
     <script src="./js/funcionesAlumnos.js"></script>
+    <script src="js/datos.js"></script>
   </body>
 </html>

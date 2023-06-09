@@ -38,11 +38,11 @@ table {
    
   }
   /* Estilos para los botones de acción */
-.button-editar {
+.btn-edit {
     background-color:#066290; /* Color de fondo */
     color: white; /* Color de texto */
     border: none; /* Sin bordes */
-    padding: 8px 17px; /* Relleno */
+    padding: 8px 12px; /* Relleno */
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -54,7 +54,7 @@ table {
     
   }
   
-  .button-eliminar {
+  .btn-delete {
     background-color: #890f06; /* Color de fondo */
     color: white; /* Color de texto */
     border: none; /* Sin bordes */
@@ -67,6 +67,19 @@ table {
     margin-left: 10%;
     
   }
+  .btn-add {
+    background-color: #068941; /* Color de fondo */
+    color: white; /* Color de texto */
+    border: solid black; /* Sin bordes */
+    /* padding: 8px 12px; Relleno */
+    text-align: start;
+    align-content: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5px;
+   
+    }
   
   /* Estilos para los iconos */
   .button-editar i,

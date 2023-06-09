@@ -1,0 +1,82 @@
+[
+    {
+      "id": 1,
+      "nombre": "Introducción a la Administración",
+      "carrera": "Administración de Empresas",
+      "profesor": "María López",
+      "creditos": 4,
+      "carga_horaria": 60
+    },
+    {
+      "id": 2,
+      "nombre": "Contabilidad Financiera",
+      "carrera": "Contabilidad",
+      "profesor": "Juan Rodríguez",
+      "creditos": 5,
+      "carga_horaria": 75
+    },
+    {
+      "id": 3,
+      "nombre": "Gestión de Recursos Humanos",
+      "carrera": "Administración de Recursos Humanos",
+      "profesor": "Laura Gómez",
+      "creditos": 4,
+      "carga_horaria": 60
+    },
+    {
+      "id": 4,
+      "nombre": "Marketing Estratégico",
+      "carrera": "Marketing",
+      "profesor": "Carlos Torres",
+      "creditos": 5,
+      "carga_horaria": 75
+    },
+    {
+      "id": 5,
+      "nombre": "Análisis de Decisiones",
+      "carrera": "Administración de Empresas",
+      "profesor": "Ana Martínez",
+      "creditos": 4,
+      "carga_horaria": 60
+    },
+    {
+      "id": 6,
+      "nombre": "Economía Empresarial",
+      "carrera": "Economía",
+      "profesor": "Pedro Sánchez",
+      "creditos": 5,
+      "carga_horaria": 75
+    },
+    {
+      "id": 7,
+      "nombre": "Derecho Comercial",
+      "carrera": "Derecho",
+      "profesor": "Lucía Ramírez",
+      "creditos": 4,
+      "carga_horaria": 60
+    },
+    {
+      "id": 8,
+      "nombre": "Estadística Aplicada",
+      "carrera": "Estadística",
+      "profesor": "Miguel Castro",
+      "creditos": 4,
+      "carga_horaria": 60
+    },
+    {
+      "id": 9,
+      "nombre": "Finanzas Corporativas",
+      "carrera": "Finanzas",
+      "profesor": "Sofía García",
+      "creditos": 5,
+      "carga_horaria": 75
+    },
+    {
+      "id": 10,
+      "nombre": "Comportamiento Organizacional",
+      "carrera": "Psicología Organizacional",
+      "profesor": "Andrés Torres",
+      "creditos": 4,
+      "carga_horaria": 60
+    }
+  ]

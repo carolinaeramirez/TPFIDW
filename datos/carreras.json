@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "nombre": "Administración de Empresas",
+      "duracion": "4 años",
+      "tipo": "Licenciatura"
+    },
+    {
+      "id": 2,
+      "nombre": "Contabilidad",
+      "duracion": "4 años",
+      "tipo": "Licenciatura"
+    },
+    {
+      "id": 3,
+      "nombre": "Administración de Recursos Humanos",
+      "duracion": "4 años",
+      "tipo": "Licenciatura"
+    },
+    {
+      "id": 4,
+      "nombre": "Marketing",
+      "duracion": "4 años",
+      "tipo": "Licenciatura"
+    },
+    {
+      "id": 5,
+      "nombre": "Economía",
+      "duracion": "4 años",
+      "tipo": "Licenciatura"
+    },
+    {
+      "id": 6,
+      "nombre": "Derecho",
+      "duracion": "5 años",
+      "tipo": "Licenciatura"
+    },
+    {
+      "id": 7,
+      "nombre": "Estadística",
+      "duracion": "4 años",
+      "tipo": "Licenciatura"
+    },
+    {
+      "id": 8,
+      "nombre": "Finanzas",
+      "duracion": "4 años",
+      "tipo": "Licenciatura"
+    },
+    {
+      "id": 9,
+      "nombre": "Psicología Organizacional",
+      "duracion": "4 años",
+      "tipo": "Licenciatura"
+    }
+  ]
