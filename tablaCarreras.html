@@ -90,22 +90,20 @@
     </nav>
   </header>
 
-  <body>
-    <table id="tabla">
-      <thead class="encabezado">
-        <th>Nombre</th>
-        <th>Código de la carrera</th>
-        <th>Descripción</th>
-        <th>Duración</th>
-        <th>Cantidad de materias</th>
-        <th>Acciones</th>
-      </thead>
-      <tbody>
-        <td></td>
-      </tbody>
-    </table>
+  <body onload="addCarreraTabla()">
+    <div class="table-responsive">
+      <table id="listaCarreras">
+        <thead class="encabezado">
+          <th>Nombre</th>
+          <th>Duración</th>
+          <th>Tipo</th>
+          <th>Acciones</th>
+        </thead>
+        <tbody id="bodyCarreras"></tbody>
+      </table>
+    </div>
 
-     <script src="./js/tablaCarreras.js"></script>
-  <!--  <script src="./js/funciones.js"></script> -->
+    <script src="./js/tablaCarreras.js"></script>
+    <script src="js/datos.js"></script>
   </body>
 </html>

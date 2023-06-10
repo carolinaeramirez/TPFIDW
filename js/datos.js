@@ -11,3 +11,15 @@ fetch("./datos/alumnos.json")
     console.error("Error al leer el archivo JSON:", error);
   });
 
+  fetch("./datos/carreras.json")
+  .then((response) => response.json())
+  .then((data) => {
+
+    const carreras = JSON.stringify(data);
+    localStorage.setItem("carreras", carreras);
+    console.log("datos", carreras);
+  })
+  .catch((error) => {
+    alert(error)
+    console.error("Error al leer el archivo JSON:", error);
+  });

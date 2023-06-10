@@ -1,50 +1,45 @@
-function addcarrera() {
-  document.getElementById("addCarrera");
-  addEventListener("submit", function (e) {
-    e.preventDefault();
-    console.log("funciona");
-    const nombreCarrera = document.getElementById("carreraNombre").value;
-    if (nombreCarrera === "") {
-      alert("Por favor ingrese el nombre de la carrera");
-      return false;
-    }
-    const codigoCarrera = document.getElementById("codigo").value;
-    if (codigoCarrera === "") {
-      alert("Por favor ingrese el codigo de carrera");
-      return false;
-    }
-    const descripcionCarrera = document.getElementById("descripcion").value;
-    if (descripcionCarrera === "") {
-      alert("Debe ingresar una descripcion de la carrera");
-      return false;
-    }
-    const duracionCarrera = document.getElementById("duracion").value;
-    if (duracionCarrera === "") {
-      alert("Debe ingresar la duracion de la carrera en años");
-      return false;
-    }
-    const cantMaterias = document.getElementById("materiasNro").value;
-    if (cantMaterias === "") {
-      alert("Debe ingresar el numero de materias correspondiente a la carrera");
-      return false;
-    }
-    var newCarrera = {
-      nombreCarrera: nombreCarrera,
-      codigoCarrera: codigoCarrera,
-      descripcionCarrera: descripcionCarrera,
-      duracionCarrera: duracionCarrera,
-      cantMaterias: cantMaterias,
-    };
-    var storedData = localStorage.getItem("carreras");
-
-    if (storedData) {
-      dataArray = JSON.parse(storedData);
+let index; 
+function obtenerId() {
+  const listadoCarreras = localStorage.getItem("carreras");
+  if (listadoCarreras) {
+    const listadoArray = JSON.parse(listadoCarreras);
+    if (listadoArray.length > 0) {
+      index = listadoArray[listadoArray.length - 1].id + 1;
     } else {
-      var dataArray = [];
+      index = 1;
     }
-    dataArray.push(newCarrera);
-    localStorage.setItem("carreras", JSON.stringify(nueva));
-    console.log(dataArray);
-  });
+  } else {
+    index = 1;
+  }
 }
-//REVISAR PORQUE CARGA LOS DATOS DOS VECES-
+function addCarrera() {
+  obtenerId();
+  console.log("funciona el boton");
+  // capturamos los inputs:
+  let nombre = document.getElementById("nombre").value;
+  let duracion = document.getElementById("duracion").value;
+  let tipoCarrera = document.getElementById("tipoCarrera").value;
+  // let materiasNro = document.getElementById("materiasNro").value;
+  console.log(nombre, duracion, tipoCarrera)
+// if(nombre =="" || duracion=="" || tipoCarrera==""|| materiasNro==""){
+//   alert("debes completar todos los campos")
+//   return false
+// }
+//   var newCarrera = {
+//     nombre: nombre,
+//     duracion: duracion,
+//     tipoCarrera: tipoCarrera,
+//     materiasNro: materiasNro,
+//   };
+//   console.log("NOMBRE", nombre, duracion, tipo, materiasNro);
+//   var datosCarreras = localStorage.getItem("carreras");
+//   if (datosCarreras) {
+//     listArray = JSON.parse(datosCarreras);
+//   } else {
+//     var listArray = [];
+//   }
+//   listArray.push(newCarrera);
+//   localStorage.setItem("carreras", JSON.stringify(listArray))
+//   console.log(listArray)
+}
+
