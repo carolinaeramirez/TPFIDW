@@ -17,11 +17,18 @@
     <link rel="stylesheet" href="fontello/css/jose.css" />
     <link rel="stylesheet" href="./css/administracion.css" />
     <link rel="shortcut icon" href="img/logo3.jpg" type="image/x-icon" />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $('#navbar').load('navbar.html');
+      });
+    </script>
+      <script src="./js/barraNavegacion.js"></script>
     <title>Administración</title>
   </head>
 
   <body class="row mt-3">
+    <div id="navbar"></div>
     <div class="row mt-1">
       <div class="col-12 nuestra-carrera">
         <h1>Administración</h1>

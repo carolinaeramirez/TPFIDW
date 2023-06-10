@@ -1,4 +1,5 @@
-let index; 
+let index;
+
 function obtenerId() {
   const listadoCarreras = localStorage.getItem("carreras");
   if (listadoCarreras) {
@@ -12,34 +13,39 @@ function obtenerId() {
     index = 1;
   }
 }
+
 function addCarrera() {
   obtenerId();
   console.log("funciona el boton");
-  // capturamos los inputs:
+  
+  // Capturamos los inputs:
   let nombre = document.getElementById("nombre").value;
   let duracion = document.getElementById("duracion").value;
   let tipoCarrera = document.getElementById("tipoCarrera").value;
-  // let materiasNro = document.getElementById("materiasNro").value;
-  console.log(nombre, duracion, tipoCarrera)
-// if(nombre =="" || duracion=="" || tipoCarrera==""|| materiasNro==""){
-//   alert("debes completar todos los campos")
-//   return false
-// }
-//   var newCarrera = {
-//     nombre: nombre,
-//     duracion: duracion,
-//     tipoCarrera: tipoCarrera,
-//     materiasNro: materiasNro,
-//   };
-//   console.log("NOMBRE", nombre, duracion, tipo, materiasNro);
-//   var datosCarreras = localStorage.getItem("carreras");
-//   if (datosCarreras) {
-//     listArray = JSON.parse(datosCarreras);
-//   } else {
-//     var listArray = [];
-//   }
-//   listArray.push(newCarrera);
-//   localStorage.setItem("carreras", JSON.stringify(listArray))
-//   console.log(listArray)
+  
+  // Validamos que los campos no estén vacíos
+  if (nombre.trim() === "" || duracion.trim() === "" || tipoCarrera.trim() === "") {
+    alert("Debes completar todos los campos");
+    return false;
+  }
+  
+ 
+  
+  console.log(nombre, duracion, tipoCarrera);
+  
+  var newCarrera = {
+    id: index,
+    nombre: nombre,
+    duracion: duracion,
+    tipoCarrera: tipoCarrera
+  };
+  
+  console.log("NOMBRE", nombre, duracion, tipoCarrera);
+  
+  var datosCarreras = localStorage.getItem("carreras");
+  var listArray = datosCarreras ? JSON.parse(datosCarreras) : [];
+  
+  listArray.push(newCarrera);
+  localStorage.setItem("carreras", JSON.stringify(listArray));
+  console.log(listArray);
 }
-
