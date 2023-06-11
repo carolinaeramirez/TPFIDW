@@ -294,11 +294,12 @@ article p{
 
 /*Pagina de Carreras*/
 .Contenedor{
-    width: 200%;
+    width: 100%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
     display: center;
+    align-content: center;
 }
 .caja1{
     width: 330px;

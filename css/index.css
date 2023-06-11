@@ -60,11 +60,11 @@ nav ul li a {
   padding: auto;
 margin-block-start: auto;
 }
-/* .container-cards{
+.container-cards{
     display: flex;
     justify-content: space-between;
 
-} */
+}
 .colapse-buton {
   background-color: #eee;
   color: #333;

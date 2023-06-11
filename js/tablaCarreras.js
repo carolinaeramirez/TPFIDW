@@ -96,6 +96,4 @@ function eliminarCarrera(id) {
   this.addCarreraTabla();
 }
 
-// function removeLocalStorage() {
-//   localStorage.removeItem("Carreras");
-// }
+// Mostrar las carreras en tarjetas

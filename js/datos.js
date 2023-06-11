@@ -4,7 +4,7 @@ fetch("./datos/alumnos.json")
     // Aquí puedes trabajar con los datos del archivo JSON
     const alumnos = JSON.stringify(data);
     localStorage.setItem("alumnos", alumnos);
-    console.log("datos",alumnos);
+    // console.log("datos",alumnos);
   })
   .catch((error) => {
     alert(error)
@@ -17,9 +17,22 @@ fetch("./datos/alumnos.json")
 
     const carreras = JSON.stringify(data);
     localStorage.setItem("carreras", carreras);
-    console.log("datos", carreras);
+    // console.log("datos", carreras);
   })
   .catch((error) => {
     alert(error)
-    console.error("Error al leer el archivo JSON:", error);
+    // console.error("Error al leer el archivo JSON:", error);
+  });
+
+  fetch("./datos/materias.json")
+  .then((response) => response.json())
+  .then((data) => {
+
+    const materias = JSON.stringify(data);
+    localStorage.setItem("materias", materias);
+    // console.log("datos", materias);
+  })
+  .catch((error) => {
+    alert(error)
+    // console.error("Error al leer el archivo JSON:", error);
   });
