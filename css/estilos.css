@@ -1,22 +1,21 @@
-
-body{
-    background-color: #ECEAE8;
+body {
+  background-color: #eceae8;
 }
 /*logo del menu*/
-.logo{
-    width: 70px;
+.logo {
+  width: 70px;
 }
-#menu-burger{
-    color: #fff;
+#menu-burger {
+  color: #fff;
 }
 
-.container-fluid{
-    background-color: #001E2D;
+.container-fluid {
+  background-color: #001e2d;
 }
 
 /*color del menu principal*/
-.navbar-light .navbar-nav .nav-item .nav-link{
-    color: #fff;
+.navbar-light .navbar-nav .nav-item .nav-link {
+  color: #fff;
 }
 
 /* .carrusel{
@@ -25,471 +24,443 @@ body{
 } */
 
 /*Contenedor del carrusel*/
-.contenedor-slider{
-    width: 100%;
-    height: 330px;
-    
-    
+.contenedor-slider {
+  width: 100%;
+  height: 330px;
 }
 /*Cartel rojo de nuestra carrera*/
-.nuestra-carrera{
-    display: flex;
-    align-items:center ;
-    height: 80px;
-    width: 100%;
-    background-color: #880000;
-    box-shadow: 5px -5px 3px;
+.nuestra-carrera {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background-color: #880000;
+  box-shadow: 5px -5px 3px;
+  margin-left: 10px;
 }
-.nuestra-carrera h1{
-    font-family: sans-serif;
-    margin: auto;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: #fff;
-    font-weight: 500;
+.nuestra-carrera h1 {
+  font-family: sans-serif;
+  margin: auto;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #fff;
+  font-weight: 500;
 }
 
-.lista-aside{
-    padding: 0px;
-    
+.lista-aside {
+  padding: 0px;
 }
 
 /*Titulos de Novedades y acceso rapido*/
-h5{
-    background-color: #001E2D;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-
+h5 {
+  background-color: #001e2d;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /*-----Menu Vertical--------*/
-.vertical .nav-link{
-    color: #001E2D;
-    border: 2px solid #001E2D;
-    margin-bottom: 4px;
-    /*background-color: #001E2D;*/
-   
-    
-} 
-
-/*Boton del portafolio*/
-.card-body a{
-    float: right;
-    background-color: #001E2D;
-    color: #000;
-    border: 1px solid #000;
-    padding: 3px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 13px;
+.vertical .nav-link {
+  color: #001e2d;
+  border: 2px solid #001e2d;
+  margin-bottom: 4px;
+  /*background-color: #001E2D;*/
 }
 
-.card-body a:hover{
-    background-color: #001E2D;
-    color: #fff;
+/*Boton del portafolio*/
+.card-body a {
+  float: right;
+  background-color: #001e2d;
+  color: #000;
+  border: 1px solid #000;
+  padding: 3px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.card-body a:hover {
+  background-color: #001e2d;
+  color: #fff;
 }
 
 /*estilos footer*/
-footer{
-    background-color: #001E2D;
-    height: 150px;
+footer {
+  background-color: #001e2d;
+  height: 150px;
 }
-.pie-footer{
-    margin: 0px;
-    padding: 0px;
-    color: #fff;
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: 100;
+.pie-footer {
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 100;
 }
-.desarrolladores, .direccion{
-    margin: 0px;
-    padding: 0px;
-    color: #fff;
-    text-align: center;
-    font-size: 12px;
-    font-family: sans-serif;
-    font-weight: 200;
+.desarrolladores,
+.direccion {
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 200;
 }
-.iconos-redes img{
-    padding: 0px;
-    margin: 0px;
-    margin-right: 10px;
-    
+.iconos-redes img {
+  padding: 0px;
+  margin: 0px;
+  margin-right: 10px;
 }
-
-
-
-
-
 
 /*----------------Estilos de la pagina de contacto---------------------*/
-.fondo{
-    background-color: #DAEFF5;
-    color: #000;
-    letter-spacing: 1px;
-    font-weight: 400;
+.fondo {
+  background-color: #daeff5;
+  color: #000;
+  letter-spacing: 1px;
+  font-weight: 400;
 }
 
-.formulario h3{
-    text-align: center;
-    color: #fff;
-    background-color: #001E2D;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-    padding: 5px;
+.formulario h3 {
+  text-align: center;
+  color: #fff;
+  background-color: #001e2d;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  padding: 5px;
 }
-form .boton{
-    background-color: #001E2D;
-    text-align: center;
-    width: 100%;
+form .boton {
+  background-color: #001e2d;
+  text-align: center;
+  width: 100%;
 }
-form .boton:hover{
-    padding: 5px;
-    background-color: #001E2D;
+form .boton:hover {
+  padding: 5px;
+  background-color: #001e2d;
 }
-.contenedor-boton{
-    text-align: center;
-}
-
-.contenedor-mapa  h3{
-    color: #fff;
-    text-align: center;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #001E2D;
-    padding: 5px;
-    margin-bottom: 10px;
-    
+.contenedor-boton {
+  text-align: center;
 }
 
-.informacion h3{
-    color: #fff;
-    text-align: center;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #001E2D;
-    padding: 5px;
-    margin-bottom: 10px;
-}
-.informacion p{
-    margin: 0px;
-    padding: 0px;
-    color: #001E2D;
-    font-weight: 400;
-
-}
-.informacion a{
-    text-decoration: none;
-    color: #001E2D;
+.contenedor-mapa h3 {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #001e2d;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 
-
+.informacion h3 {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #001e2d;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.informacion p {
+  margin: 0px;
+  padding: 0px;
+  color: #001e2d;
+  font-weight: 400;
+}
+.informacion a {
+  text-decoration: none;
+  color: #001e2d;
+}
 
 /*----------------Estilos de la pagina de Institucional---------------------*/
 
-
 /*Estilos de Msión Visión y valores*/
-main h2{
-    background-color: #001E2D;
-    color: #fff;
-    text-align: center;
-    font-size: 25px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding: 5px 0;
+main h2 {
+  background-color: #001e2d;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 0;
 }
-article h3{
-    text-align: center;
-    color: #001E2D;
-    font-size: 20px;
-    text-transform: uppercase;
+article h3 {
+  text-align: center;
+  color: #001e2d;
+  font-size: 20px;
+  text-transform: uppercase;
 }
-article p{
-    text-align: justify;
-    background-color: #EAEFF0;
-    padding: 5px;
+article p {
+  text-align: justify;
+  background-color: #eaeff0;
+  padding: 5px;
 }
 /*Fin de estilos de Msión Visión y valores*/
 
-
-
-
 /*Estilos de autoridades*/
 
-
-.titulo-autoridades h3{
-    background-color: #001E2D;
-    color: #fff;
-    text-align: center;
-    font-size: 25px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding: 5px 0;
+.titulo-autoridades h3 {
+  background-color: #001e2d;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 0;
 }
 
-.autoridades p{
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
+.autoridades p {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
 }
-.autoridades .decano{
-    color: #000;
-    text-transform: uppercase;
-    font-size: 15px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    margin-top: 15px;
-}
-
-.autoridades .nombre-decano{
-    color: #000;
-    text-transform: uppercase;
-    font-size: 15px;
-    letter-spacing: 1px;
-    
+.autoridades .decano {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: 15px;
 }
 
-.autoridades .correo-decano{
-    display: block;
-    color: #000;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 1px;
+.autoridades .nombre-decano {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.autoridades .correo-decano {
+  display: block;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
 }
 /*Fin de estilos de autoridades*/
 
 /*Inicio de estilos faq y telefonos*/
-.faq h3{
-    background-color: #001E2D;
-    color: #fff;
-    text-align: center;
-    font-size: 25px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding: 5px 0;
+.faq h3 {
+  background-color: #001e2d;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 0;
 }
 
-.telefonos-utiles h3{
-    background-color: #001E2D;
-    color: #fff;
-    text-align: center;
-    font-size: 25px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding: 5px 0;
+.telefonos-utiles h3 {
+  background-color: #001e2d;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 0;
 }
 
-.table th{
-    background-color: #668EBB;
-    color: #fff;
+.table th {
+  background-color: #668ebb;
+  color: #fff;
 }
 
 /*Pagina de Carreras*/
-.Contenedor{
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
-    display: center;
-    align-content: center;
+.Contenedor {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  display: center;
+  align-content: center;
 }
-.caja1{
-    width: 330px;
-    height: 400px;
-    float: left;
-    padding: 15px 10px 10px 50px;
-    border-spacing: 5px;
+.caja1 {
+  width: 330px;
+  height: 400px;
+  float: left;
+  padding: 15px 10px 10px 50px;
+  border-spacing: 5px;
 }
-.caja2{
-    width: 330px;
-    height: 250px;
-    float: left;
-    padding: 15px;
+.caja2 {
+  width: 330px;
+  height: 250px;
+  float: left;
+  padding: 15px;
 }
-.caja3{
-    width: 330px;
-    height: 600px;
-    float: left;
-    padding: 15px;
+.caja3 {
+  width: 330px;
+  height: 600px;
+  float: left;
+  padding: 15px;
 }
 .caja1 h3 {
-    background-color: #001E2D;
-    color: #fff;
-    text-align: center;
-    font-size: 20px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding: 5px;
+  background-color: #001e2d;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px;
 }
 .caja2 h3 {
-    background-color: #001E2D;
-    color: #fff;
-    text-align: center;
-    font-size: 20px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding: 5px;
+  background-color: #001e2d;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px;
 }
 .caja3 h3 {
-    background-color: #001E2D;
-    color: #fff;
-    text-align: center;
-    font-size: 20px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding: 5px;
+  background-color: #001e2d;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px;
 }
-ol{
-    list-style-type: none;
+ol {
+  list-style-type: none;
 }
 /* Al pasar el mouse sobre la LISTA */
 ol:hover li a {
-    transform: scale(1);
-    opacity: 0.7;
-    filter: blur(0.5px); 
+  transform: scale(1);
+  opacity: 0.7;
+  filter: blur(0.5px);
 }
 /* Al pasar el mouse sobre un LINK dentro de la lista */
 ol li a:hover {
-    transform: scale(1.1); 
-    opacity: 1;
-    filter: blur(0px);
+  transform: scale(1.1);
+  opacity: 1;
+  filter: blur(0px);
 }
-ol li a:hover img{
-    transform: scale(1.1);
+ol li a:hover img {
+  transform: scale(1.1);
 }
 /* Al ENTRAR con el mouse sobre el link dentro de la lista */
 ol li a:before {
-    content: "";
-    position: absolute; 
-    top: 0px;
-    left: 0px;
-    width: 100%;        
-    height: 100%;      
-    transition: 0.4s;
-    transform-origin: right;
-    transform: scaleX(1.1); 
-    z-index: -1;      
-} 
-.nav-link img{
-    height: 25px;
-    margin: 2px 5px;
-    display: inline-block;
-    text-align: center;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  transform-origin: right;
+  transform: scaleX(1.1);
+  z-index: -1;
 }
-.caja .barra{
-    display: flex;
-    align-items:center;
-    height: 50px;
-    width: 100%;
-    background-color: #880000;
-    box-shadow: 5px -5px 3px;
-    margin-top: 150px;
-
+.nav-link img {
+  height: 25px;
+  margin: 2px 5px;
+  display: inline-block;
+  text-align: center;
 }
-.caja .barra .nav-item{
-    width: 100px;
-    height: 100px;
-    background-color: #001E2D;
-    border-radius: 70%;
-    box-shadow: 5px -5px 3px;
-    display: flex;
-    justify-content: center;
-    margin: 100px;
-    text-align: center;
-    font-size: 12px;
+.caja .barra {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: #880000;
+  box-shadow: 5px -5px 3px;
+  margin-top: 150px;
 }
-
-.icon-carpeta{
-    width: 100px;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    text-decoration: none;
-    font-size: 40px;
-
+.caja .barra .nav-item {
+  width: 100px;
+  height: 100px;
+  background-color: #001e2d;
+  border-radius: 70%;
+  box-shadow: 5px -5px 3px;
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+  text-align: center;
+  font-size: 12px;
 }
 
-
-
-
-
-
-
+.icon-carpeta {
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  font-size: 40px;
+}
 
 /*Aca arrancan los media query*/
-@media(max-width:700px){
-    .contenedor-slider{
-        width: 100%;
-        height: 180px;
-    }
+@media (max-width: 700px) {
+  .contenedor-slider {
+    width: 100%;
+    height: 180px;
+  }
 
-    .nuestra-carrera h1{
-        font-size: 18px;
-        letter-spacing: 1px;
-    }
-    .iconos-redes img{
-        width: 20px;
-    }
-    h5{
-       font-size: 15px; 
-    }
-    .logo{
-        width: 40px;
-    }
-    .pie-footer{
-        font-size: 13px;
-    }
-    .desarrolladores, .direccion{
-        font-size: 10px;
-    }
+  .nuestra-carrera h1 {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .iconos-redes img {
+    width: 20px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+  .logo {
+    width: 40px;
+  }
+  .pie-footer {
+    font-size: 13px;
+  }
+  .desarrolladores,
+  .direccion {
+    font-size: 10px;
+  }
 
-    /*mediaquery pagina institucional*/
-    main h2{
-        font-size: 18px;
-    }
-    .titulo-autoridades h3{
-        font-size: 18px;
-    }
-    .faq h3{
-        font-size: 18px;
-    }
-    .telefonos-utiles h3{
-        font-size: 18px;
-    }
-    article h3{
-        font-size: 15px;
-    }
+  /*mediaquery pagina institucional*/
+  main h2 {
+    font-size: 18px;
+  }
+  .titulo-autoridades h3 {
+    font-size: 18px;
+  }
+  .faq h3 {
+    font-size: 18px;
+  }
+  .telefonos-utiles h3 {
+    font-size: 18px;
+  }
+  article h3 {
+    font-size: 15px;
+  }
 
-    /*mediaquery pagina Contacto*/
+  /*mediaquery pagina Contacto*/
 
-    .fondo{
-        font-size: 14px;
-    }
-    .formulario h3{
-        font-size: 18px;
-    }
-    .contenedor-mapa h3{
-        font-size: 15px;
-    }
-    .informacion h3{
-        font-size: 15px;
-    }
+  .fondo {
+    font-size: 14px;
+  }
+  .formulario h3 {
+    font-size: 18px;
+  }
+  .contenedor-mapa h3 {
+    font-size: 15px;
+  }
+  .informacion h3 {
+    font-size: 15px;
+  }
 
-    .accordion-body{
-        text-align: justify;
-        font-size: 15px;
-    }
-    button.accordion-button.collapsed{
-        text-align: left;
-        font-size: 15px;
-    }
+  .accordion-body {
+    text-align: justify;
+    font-size: 15px;
+  }
+  button.accordion-button.collapsed {
+    text-align: left;
+    font-size: 15px;
+  }
 }

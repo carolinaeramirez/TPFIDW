@@ -1,5 +1,6 @@
 let index;
 function enviar() {
+  window.location.href="tablaAlumn.html"
   obtenerId();
   const nombre = document.getElementById("nombre").value;
   if (nombre === "") {
@@ -15,8 +16,8 @@ function enviar() {
     alert("Por favor, ingrese su DNI.");
   }
 
-  const fechaNacimiento = document.getElementById("fecha-nacimiento").value;
-  if (fechaNacimiento === "") {
+  const fecha_nacimiento = document.getElementById("fecha_nacimiento").value;
+  if (fecha_nacimiento === "") {
     alert("Por favor, ingrese su fecha de nacimiento.");
   }
 
@@ -38,7 +39,7 @@ function enviar() {
     nombre: nombre,
     apellido: apellido,
     dni: dni,
-    fechaNacimiento: fechaNacimiento,
+    fecha_nacimiento: fecha_nacimiento,
     nacionalidad: nacionalidad,
     email: email,
     celular: celular,
@@ -61,16 +62,18 @@ function enviar() {
   if (confirm("Seguro que desar guardar los datos")) {
     txt = "";
     clear();
+    
   } else {
     txt = "prueba 3";
   }
+ 
 }
 // para limpiar el formulario despues de enviar la informacion.
 function clear() {
   document.getElementById("nombre").value = "";
   document.getElementById("apellido").value = "";
   document.getElementById("dni").value = "";
-  document.getElementById("fecha-nacimiento").value = "";
+  document.getElementById("fecha_nacimiento").value = "";
   document.getElementById("nacionalidad").value = "";
   document.getElementById("email").value = "";
   document.getElementById("celular").value = "";

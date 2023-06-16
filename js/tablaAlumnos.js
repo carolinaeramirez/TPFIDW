@@ -6,7 +6,7 @@ function addAlumnoTabla() {
     const jsonData = JSON.parse(listadoAlumnos);
     const tableBody = document.getElementById("bodyAlumnos");
     for (let j of jsonData) {
-      console.log("informacion del for", j);
+      // console.log("informacion del for", j);
       // Nodo tr
       let row = document.createElement("tr");
       // Nodos td
@@ -51,6 +51,8 @@ function addAlumnoTabla() {
 
       let edt = "editar" + j.id;
       editar.setAttribute("id", edt);
+      editar.setAttribute("onclick", "editarAlumno(" + j.id + ")");
+      // console.log(j.id);
 
       // Árbol de nodos DOM
       cel0.appendChild(texto0);
@@ -84,26 +86,14 @@ function traerDatos() {
     return alumnos;
   }
 }
-// function eliminarAlumno(id) {
-//   traerDatos();
-//   const nuevoListado = alumnos.filter(function (item) {
-//     return item.id !== id;
-//   });
-//   // console.log(id, item.id);
-//   console.log("nuevo ", nuevoListado);
-//   localStorage.removeItem('alumnos');
-//   const jsonNuevo = JSON.stringify(nuevoListado);
-//   localStorage.setItem("alumnos", jsonNuevo);
-//   traerDatos()
-//   this.addAlumnoTabla();
-  
-// }
+
 function eliminarAlumno(id) {
   traerDatos();
+  // console.log("alumnos a eliminar ", id);
   const nuevoListado = alumnos.filter(function (item) {
     return item.id !== id;
   });
-  localStorage.removeItem('alumnos');
+  localStorage.removeItem("alumnos");
   const jsonNuevo = JSON.stringify(nuevoListado);
   localStorage.setItem("alumnos", jsonNuevo);
 
@@ -119,6 +109,14 @@ function eliminarAlumno(id) {
   this.addAlumnoTabla();
 }
 
-// function removeLocalStorage() {
-//   localStorage.removeItem("alumnos");
-// }
+function editarAlumno(id){
+  window.location.href= `alumnos-editar.html?id=${id}`;
+  // console.log("id pasado", id)
+
+}
+
+
+
+
+
+

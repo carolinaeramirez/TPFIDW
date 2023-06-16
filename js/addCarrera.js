@@ -15,37 +15,36 @@ function obtenerId() {
 }
 
 function addCarrera() {
+  window.location.href="tablaCarreras.html"
   obtenerId();
-  console.log("funciona el boton");
-  
+
   // Capturamos los inputs:
   let nombre = document.getElementById("nombre").value;
   let duracion = document.getElementById("duracion").value;
-  let tipoCarrera = document.getElementById("tipoCarrera").value;
-  
+  let tipo = document.getElementById("tipoCarrera").value;
+
   // Validamos que los campos no estén vacíos
-  if (nombre.trim() === "" || duracion.trim() === "" || tipoCarrera.trim() === "") {
+  if (
+    nombre.trim() === "" ||
+    duracion.trim() === "" ||
+    tipo.trim() === ""
+  ) {
     alert("Debes completar todos los campos");
     return false;
   }
-  
- 
-  
-  console.log(nombre, duracion, tipoCarrera);
-  
+
   var newCarrera = {
     id: index,
     nombre: nombre,
     duracion: duracion,
-    tipoCarrera: tipoCarrera
+    tipo: tipo,
   };
-  
-  console.log("NOMBRE", nombre, duracion, tipoCarrera);
-  
+
   var datosCarreras = localStorage.getItem("carreras");
   var listArray = datosCarreras ? JSON.parse(datosCarreras) : [];
-  
+
   listArray.push(newCarrera);
   localStorage.setItem("carreras", JSON.stringify(listArray));
   console.log(listArray);
+  
 }

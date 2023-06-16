@@ -10,20 +10,24 @@
     />
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="css/administracion.css" />
+    <link rel="stylesheet" href="css/searchForm.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="fontello/css/jose.css" />
-    <link rel="stylesheet" href="./css/administracion.css" />
+   
     <link rel="shortcut icon" href="img/logo3.jpg" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-      $(function() {
-        $('#navbar').load('navbar.html');
+      $(function () {
+        $("#navbar").load("navbar.html");
       });
     </script>
-      <script src="./js/barraNavegacion.js"></script>
+    <script src="js/barraNavegacion.js"></script>
+
+   
+
     <title>Administración</title>
   </head>
 
@@ -32,20 +36,22 @@
     <div class="row mt-1">
       <div class="col-12 nuestra-carrera">
         <h1>Administración</h1>
-        <div>
-          <form action="" id="busqueda-form">
-            <label for="parametro">Selecciona el parametro de busqueda:</label>
-            <select id="parametro" value="">
-              <option value="">Seleccione una opción...</option>
-              <option value="alumno">Alumnos</option>
-              <option value="carrera">Carrera</option>
-              <option value="Materia">Materia</option>
-              <option value="concursos">Concursos</option>
-            </select>
-            <input type="text" id="datoBusc" placeholder="Buscar..." value="" />
-            <button type="" onclick="buscar()">Buscar</button>
-          </form>
-        </div>
+      </div>
+      <div>
+        <form action="" id="busqueda-form">
+          <label for="parametro">Selecciona el parametro de busqueda:</label>
+          <select id="parametro" value="">
+            <option value="">Seleccione una opción...</option>
+            <option value="alumno">Alumnos</option>
+            <option value="carrera">Carrera</option>
+            <option value="Materia">Materia</option>
+            <option value="concursos">Concursos</option>
+          </select>
+          <input type="text" id="datoBusc" placeholder="Buscar..." value="" />
+          <button class="bi bi-search" type="" onclick="buscar()">
+            Buscar
+          </button>
+        </form>
       </div>
     </div>
 
@@ -55,6 +61,7 @@
           <div class="col-12 nuestra-carrera">
             <h1>Bedelia</h1>
           </div>
+          <br>
           <div class="card-body-admin">
             <h5>Tramites que se gestionan desde bedelia</h5>
             <h6>
@@ -87,10 +94,6 @@
           </div>
           <div class="card-body-admin">
             <h3>Siu Guarani</h3>
-            <h6>
-              aca deberia ir los botones acordion que los voy a buscar en boo
-            </h6>
-
             <div class="accordion">
               <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -99,14 +102,11 @@
                 <div class="accordion-content">
                   <a href="alumnos.html">Agregar alumno</a>
                   <a href="tablaAlumn.html">Listado alumnos</a>
-             
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button">
-                    Carreras
-                  </button>
+                  <button class="accordion-button">Carreras</button>
                 </h2>
                 <div class="accordion-content">
                   <a href="formCarreras.html">Agregar carrera</a>
@@ -119,67 +119,7 @@
       </div>
     </div>
 
-    <!-- <div class="col mt-3">
-    <div class="col-12 col-sm-6 col-md-6 mb-2">
-      <div class="card" style="width: auto">
-        <img src="img/ingresantes.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Alumnos</h5>
-          <a href="tablaAlumn.html" class="botonesAlumn">Ver listado</a>
-          <a href="alumnos.html" class="botonesAlumn">Agregar alumno</a>                 
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-6 mb-2">
-      <div class="card" style="width: auto">
-        <img
-          src="img/carreras.png"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 id="carreras" class="card-title">Carreras</h5>
-          <a href="tablaCarreras.html" class="botonesAlumn">Ver listado carreras</a>
-          <a href="formCarreras.html" class="botonesAlumn">Agregar carrera</a>         
-        </div>
-      </div>
-    </div>        
-  </div> -->
-
-    <!-- <div class="row mt-3">
-    <div class="col-12 col-sm-6 col-md-4 mb-2">
-      <div class="card" style="width: auto">
-        <img src="img/ingresantes.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">CONCURSOS</h5>
-          <a href="tablaAlumn.html" class="botonesAlumn">Ver listado</a>
-          <a href="alumnos.html" class="botonesAlumn">Agregar alumno</a>                 
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-4 mb-2">
-      <div class="card" style="width: auto">
-        <img src="img/ingresantes.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Alumnos</h5>
-          <a href="tablaAlumn.html" class="botonesAlumn">Ver listado</a>
-          <a href="alumnos.html" class="botonesAlumn">Agregar alumno</a>                 
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-4 mb-2">
-      <div class="card" style="width: auto">
-        <img src="img/ingresantes.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Alumnos</h5>
-          <a href="tablaAlumn.html" class="botonesAlumn">Ver listado</a>
-          <a href="alumnos.html" class="botonesAlumn">Agregar alumno</a>                 
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-    <!-- <script src="./js/busquedas.js"></script> -->
+    
     <script src="pruebas.js"></script>
   </body>
 </html>

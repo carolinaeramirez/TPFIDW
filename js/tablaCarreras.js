@@ -16,8 +16,8 @@ function addCarreraTabla() {
       let cel3 = document.createElement("td");
 
       // Nodos de texto
-      let texto0 = document.createTextNode(j.id);
-      let texto1 = document.createTextNode(j.nombre);
+      let texto0 = document.createTextNode(j.nombre);
+      let texto1 = document.createTextNode(j.duracion);
       let texto2 = document.createTextNode(j.tipo);
       let texto3 = document.createTextNode("Eliminar");
       let texto4 = document.createTextNode("Editar");

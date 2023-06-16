@@ -12,7 +12,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -21,17 +21,17 @@
     <link rel="shortcut icon" href="img/logo3.jpg" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-      $(function() {
-        $('#navbar').load('navbar.html');
+      $(function () {
+        $("#navbar").load("navbar.html");
       });
     </script>
-      <script src="js/barraNavegacion.js"></script>
+    <script src="js/barraNavegacion.js"></script>
     <title>..::Facultad de Entre Rios::..</title>
   </head>
- 
+
   <body>
     <div id="navbar"></div>
-  
+
     <div class="row mt-4">
       <div class="col-12 nuestra-carrera">
         <h1>Ficha de Inscripción</h1>
@@ -44,7 +44,6 @@
           type="text"
           placeholder="Ingrese su nombre"
           id="nombre"
-          value=""
           required
         />
         <label for="Apellido">Apellido</label>
@@ -140,11 +139,10 @@
         <br />
         <div class="contenedor-boton" id="boton">
           <button
-            type="submit"
+            id="guardarEdicion"
             class="btn btn-primary mb-2 boton"
-            onclick=" enviar()"
           >
-            Enviar
+            Guardar Cambios
           </button>
         </div>
       </form>
@@ -156,7 +154,75 @@
         <i class="fa fa-whatsapp whatsapp-icon"></i
       ></a>
     </main>
-    <script src="js/tablaAlumnos.js"></script>
-    <script src="js/agregarAlumnos.js"></script>
+    <script>
+      let alumno = {};
+      let alumnos = [];
+      let alumnoIndex;
+
+      window.addEventListener("load", function () {
+        traerIdAEditar();
+      });
+
+      const guardarEdicion = document.getElementById("guardarEdicion");
+      guardarEdicion.addEventListener("click", guardar);
+
+      function traerIdAEditar() {
+        let params = new URLSearchParams(document.location.search);
+        //let tieneId = params.has("id"); para saber si es edit
+        let id = params.get("id");
+
+        //si hay id, sino es agregar
+        if (params.has("id")) {
+          buscarAlumnoPorId(id);
+        } else {
+          //crear
+        }
+      }
+
+      function buscarAlumnoPorId(id) {
+        let listadoAlumnos = localStorage.getItem("alumnos");
+        if (listadoAlumnos !== null) {
+          alumnos = JSON.parse(listadoAlumnos);
+          alumnoIndex = alumnos.findIndex((item) => item.id == id);
+          alumno = alumnos[alumnoIndex];
+          precargarDatos();
+        }
+      }
+
+      function precargarDatos() {
+        document.getElementById("nombre").value = alumno.nombre;
+        document.getElementById("apellido").value = alumno.apellido;
+        document.getElementById("dni").value = alumno.dni;
+        document.getElementById("fecha_nacimiento").value =
+          alumno.fecha_nacimiento;
+        document.getElementById("email").value = alumno.correo_electronico;
+        document.getElementById("celular").value = alumno.celular;
+        document.getElementById("nacionalidad").value = alumno.nacionalidad;
+
+      }
+
+      function guardar() {
+        window.location.href = "tablaAlumn.html"
+        console.log("alumno a guardar", alumno);
+
+        let alumnoModif = alumno;
+
+        alumnoModif.nombre = document.getElementById("nombre").value,
+        alumnoModif.apellido = document.getElementById("apellido").value,
+        alumnoModif.dni = document.getElementById("dni").value,
+        alumnoModif.nacionalidad = document.getElementById("nacionalidad").value,
+        alumnoModif.fecha_nacimiento =  document.getElementById("fecha_nacimiento").value,
+        alumnoModif.email = document.getElementById("email").value,
+        alumnoModif.celular = document.getElementById("celular").value,
+
+
+        console.log("alumno editado", alumnoModif);
+        alumnos[alumnoIndex] = alumnoModif;
+        console.log("lista a guardar", alumnos);
+        localStorage.setItem("alumnos", JSON.stringify(alumnos));
+
+        
+      }
+    </script>
   </body>
 </html>
