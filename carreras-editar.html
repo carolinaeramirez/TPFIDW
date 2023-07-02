@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modificar carreras</title>
+    <link rel="stylesheet" href="css/form2.css" />
+    <!-- <link rel="stylesheet" href="./css/index.css" /> -->
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="fontello/css/jose.css" />
+    <link rel="shortcut icon" href="img/logo3.jpg" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#navbar").load("navBar.html");
+      });
+    </script>
+    <script src="js/barraNavegacion.js"></script>
+    <title>..::Facultad de Entre Rios::..</title>
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <div class="row mt-4">
+      <div class="col-12 nuestra-carrera">
+        <h1>Modificación de Carrera</h1>
+      </div>
+    </div>
+    <main>
+      <form action="#" class="form" id="form">
+        <label for="Nombre">Carrera</label>
+        <input
+          type="text"
+          placeholder="Ingrese nombre de Carrera"
+          id="nombre"
+          required
+        />
+        <label for="Codigo">Número código interno</label>
+        <input
+          type="number"
+          placeholder="Ingrese código interno de carrera"
+          id="cod"
+          value=""
+          required
+        />
+        <label for="anios">Cantidad de años de cursado</label>
+        <input
+          type="number"
+          placeholder="Ingrese cantidad de años de carrera"
+          id="anios"
+          value=""
+          required
+        />
+        <br />
+        <div class="contenedor-boton" id="boton">
+          <button
+            id="guardarEdicion"
+            class="btn btn-primary mb-2 boton"
+          >
+            Guardar Cambios
+          </button>
+        </div>
+      </form>
+      <a
+        href="https://wa.me/543434541664?text=Necesito%20ayuda%20para%20inscribirme%20a%20la%20carrera%20de :"
+        class="whatsapp"
+        target="_blank"
+      >
+        <i class="fa fa-whatsapp whatsapp-icon"></i
+      ></a>
+    </main>
+    <script>
+      let carrera= {};
+      let carreras= [];
+      let carreraIndex;
+
+      window.addEventListener("load", function () {
+        traerIdAEditar();
+      });
+
+      const guardarEdicion = document.getElementById("guardarEdicion");
+      guardarEdicion.addEventListener("click", guardar);
+
+      function traerIdAEditar() {
+        let params = new URLSearchParams(document.location.search);
+        //let tieneId = params.has("id"); para saber si es edit
+        let id = params.get("id");
+
+        //si hay id, sino es agregar
+        if (params.has("id")) {
+          buscarCarreraPorId(id);
+        } else {
+          //crear
+        }
+      }
+
+      function buscarCarreraPorId(id) {
+        let listadoCarreras = localStorage.getItem("carrera");
+        if (listadoCarreras !== null) {
+          carreras = JSON.parse(listadoCarreras);
+          carreraIndex = carreras.findIndex((item) => item.id == id);
+          carrera = carrera[carreraIndex];
+          precargarDatos();
+        }
+      }
+
+      function precargarDatos() {
+        document.getElementById("nombre").value = carrera.nombre;
+        document.getElementById("codigo").value = carrera.codigo;
+        document.getElementById("anios").value = carrera.anios;
+      }
+
+      function guardar() {
+        window.location.href = "tablaCarreras.html"
+        console.log("carrera a guardar", carrera);
+
+        let carreraModif = carrera;
+
+        carreraModif.nombre = document.getElementById("nombre").value,
+        carreraModif.codigo = document.getElementById("codigo").value,
+        carreraModif.anios = document.getElementById("anios").value,
+ 
+
+
+        console.log("carrera editada", carreraModif);
+        carreras[carreraIndex] = carreraModif;
+        console.log("lista a guardar", carreras);
+        localStorage.setItem("carreras", JSON.stringify(carreras));
+      }
+    </script>
+  </body>
+</html>

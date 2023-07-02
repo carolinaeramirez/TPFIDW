@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modificar Materias</title>
+    <link rel="stylesheet" href="css/form2.css" />
+    <!-- <link rel="stylesheet" href="./css/index.css" /> -->
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="fontello/css/jose.css" />
+    <link rel="shortcut icon" href="img/logo3.jpg" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#navbar").load("navBar.html");
+      });
+    </script>
+    <script src="js/barraNavegacion.js"></script>
+    <title>..::Facultad de Entre Rios::..</title>
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <div class="row mt-4">
+      <div class="col-12 nuestra-carrera">
+        <h1>Modificación de Materias</h1>
+      </div>
+    </div>
+    <main>
+      <form action="#" class="form" id="form">
+        <label for="Nombre">Materia </label>
+        <input
+          type="text"
+          placeholder="Ingrese nombre de Materia"
+          id="nombre"
+          required
+        />
+        <label for="Codigo">Número código interno</label>
+        <input
+          type="number"
+          placeholder="Ingrese código interno de materia"
+          id="codigo"
+          value=""
+          required
+        />
+        <label for="horas">Cantidad de horas semanales de cursado</label>
+        <input
+          type="number"
+          placeholder="Ingrese cantidad de horas semanales de cursado"
+          id="horas"
+          value=""
+          required
+        />
+        <br />
+        <div class="contenedor-boton" id="boton">
+          <button
+            id="guardarEdicion"
+            class="btn btn-primary mb-2 boton"
+          >
+            Guardar Cambios
+          </button>
+        </div>
+      </form>
+      <a
+        href="https://wa.me/543434541664?text=Necesito%20ayuda%20para%20inscribirme%20a%20la%20carrera%20de :"
+        class="whatsapp"
+        target="_blank"
+      >
+        <i class="fa fa-whatsapp whatsapp-icon"></i
+      ></a>
+    </main>
+    <script>
+      let materia= {};
+      let materias= [];
+      let materiasIndex;
+
+      window.addEventListener("load", function () {
+        traerIdAEditar();
+      });
+
+      const guardarEdicion = document.getElementById("guardarEdicion");
+      guardarEdicion.addEventListener("click", guardar);
+
+      function traerIdAEditar() {
+        let params = new URLSearchParams(document.location.search);
+        //let tieneId = params.has("id"); para saber si es edit
+        let id = params.get("id");
+
+        //si hay id, sino es agregar
+        if (params.has("id")) {
+          buscarMateriaPorId(id);
+        } else {
+          //crear
+        }
+      }
+
+      function buscarMateriaPorId(id) {
+        let listadoMaterias = localStorage.getItem("materia");
+        if (listadoMaterias !== null) {
+          materias = JSON.parse(listadoMaterias);
+          materiasIndex = materias.findIndex((item) => item.id == id);
+          materia = materia[materiasIndex];
+          precargarDatos();
+        }
+      }
+
+      function precargarDatos() {
+        document.getElementById("nombre").value = materia.nombre;
+        document.getElementById("codigo").value = materia.codigo;
+        document.getElementById("horas").value = materia.horas;
+      }
+
+      function guardar() {
+        window.location.href = "tablaMaterias.html"
+        console.log("materia a guardar", materia);
+
+        let materiaModif = carrera;
+
+        materiaModif.nombre = document.getElementById("nombre").value,
+        materiaModif.codigo = document.getElementById("codigo").value,
+        materiaModif.horas = document.getElementById("horas").value,
+ 
+
+
+        console.log("materia editada", materiaModif);
+        materias[materiasIndex] = materiaModif;
+        console.log("lista a guardar", materias);
+        localStorage.setItem("materias", JSON.stringify(materias));
+      }
+    </script>
+  </body>
+</html>

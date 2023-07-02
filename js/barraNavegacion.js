@@ -1,5 +1,5 @@
 // Obtener todos los enlaces de navegación
-const navLinks = document.querySelectorAll(".navbar a");
+const navLinks = document.querySelectorAll(".navBar a");
 
 // Agregar un evento de clic a cada enlace de navegación
 navLinks.forEach((link) => {

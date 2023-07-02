@@ -97,3 +97,8 @@ function eliminarCarrera(id) {
 }
 
 // Mostrar las carreras en tarjetas
+function editarCarrera(id){
+  window.location.href= `carreras-editar.html?id=${id}`;
+  // console.log("id pasado", id)
+
+}

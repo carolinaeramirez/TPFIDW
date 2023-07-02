@@ -23,6 +23,7 @@ function addMaterias() {
       let text4 = document.createTextNode("Eliminar");
       let text5 = document.createTextNode("Editar");
 
+      // Nodo para el botón de eliminar
       let eliminarM = document.createElement("btn-delete");
       eliminarM.style.backgroundColor = "red";
       eliminarM.style.color = "white";
@@ -35,6 +36,7 @@ function addMaterias() {
       eliminarM.setAttribute("id", materiaEliminar);
       eliminarM.setAttribute("onclick", "eliminarMateria(" + j.id + ")");
 
+      // Nodo para el eliminar editar
       let editarM = document.createElement("btn-edit");
       editarM.style.backgroundColor = "blue";
       editarM.style.color = "white";
@@ -46,14 +48,16 @@ function addMaterias() {
 
       let edt = "editar" + j.id;
       editarM.setAttribute("id", edt);
+      editar.setAttribute("onclick", "editarMateria(" + j.id + ")");
 
+      // Árbol de nodos DOM
       cel0.appendChild(text0);
       cel1.appendChild(text1);
       cel2.appendChild(text2);
       cel3.appendChild(text3);
-      
       cel4.appendChild(editarM);
       cel4.appendChild(eliminarM);
+
       eliminarM.appendChild(text4);
       editarM.appendChild(text5);
 
@@ -63,10 +67,43 @@ function addMaterias() {
       row.appendChild(cel3);
       row.appendChild(cel4);
   
-
       tableBody.appendChild(row);
     }
   } else {
     alert("NO HAY DATOS CARGADOS");
   }
+}
+function traerDatos() {
+  listadoMaterias = localStorage.getItem("Materias");
+  if (listadoMaterias !== null) {
+    materias = JSON.parse(listadoMaterias);
+    return materias;
+  }
+}
+function eliminarMateria(id) {
+  traerDatos();
+  // console.log("materia a eliminar ", id);
+  const nuevoListado = materias.filter(function (item) {
+    return item.id !== id;
+  });
+  localStorage.removeItem("materias");
+  const jsonNuevo = JSON.stringify(nuevoListado);
+  localStorage.setItem("materias", jsonNuevo);
+
+  // Obtiene la referencia al elemento padre de la tabla
+  const tablaMaterias = document.getElementById("bodyMaterias");
+
+  // Elimina los nodos hijos de la tabla
+  while (tablaMaterias.firstChild) {
+    tablaMaterias.removeChild(tablaMaterias.firstChild);
+  }
+
+  // Vuelve a cargar la tabla con los nuevos datos
+  this.addMateriasTabla();
+}
+
+function editarMateria(id){
+  window.location.href= `materias-editar.html?id=${id}`;
+  // console.log("id pasado", id)
+
 }

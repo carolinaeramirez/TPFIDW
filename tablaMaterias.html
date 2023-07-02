@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Listado Materias</title>
+    <title>Listado de Materias</title>
     <link rel="stylesheet" href="./css/form2.css" />
     <link rel="stylesheet" href="./css/estilos.css" />
     <link
@@ -21,14 +21,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
       $(function () {
-        $("#navbar").load("navbar.html");
-      });
+        $("#navbar").load("navBar.html");
+      })
     </script>
   </head>
   <body>
-    <div id="navbar"></div>
+    <div id="navbar">
     <button onclick="addMaterias()">CARGAR DATOS</button>
-    <div id="navbar"></div>
     <div class="table-responsive">
       <table id="listaMaterias">
         <thead class="encabezado">
@@ -41,7 +40,9 @@
         <tbody id="bodyMaterias"></tbody>
       </table>
     </div>
-
+    <a href = "administracion.html"  class="boton" id="boton">
+      <button type="button" class="btn btn-primary btn-sm">Volver </button>
+    </a>
     <script src="js/tablaMaterias.js"></script>
     <script src="js/datos.js"></script>
   </body>
